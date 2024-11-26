@@ -1,0 +1,223 @@
+{
+    "container_type": "Author",
+    "filled": [
+        "basics",
+        "publications",
+        "indices",
+        "counts"
+    ],
+    "scholar_id": "0MDbs-8AAAAJ",
+    "source": "AUTHOR_PROFILE_PAGE",
+    "name": "Yongyi Su",
+    "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=0MDbs-8AAAAJ&citpid=1",
+    "affiliation": "South China University of Technology",
+    "organization": 860517580441145031,
+    "interests": [
+        "Computer Vision",
+        "Machine Learning",
+        "Test-Time Adaptation"
+    ],
+    "email_domain": "@mail.scut.edu.cn",
+    "homepage": "https://yysu.site/",
+    "citedby": 108,
+    "publications": {
+        "0MDbs-8AAAAJ:u-x6o8ySG0sC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Revisiting Realistic Test-Time Training: Sequential Inference and Adaptation by Anchored Clustering",
+                "pub_year": "2022",
+                "citation": "Advances in Neural Information Processing Systems 2022, 2022"
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:u-x6o8ySG0sC",
+            "num_citations": 39,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15662895642331219475",
+            "cites_id": [
+                "15662895642331219475"
+            ]
+        },
+        "0MDbs-8AAAAJ:u5HHmVD_uO8C": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Weakly supervised 3D point cloud segmentation via multi-prototype learning",
+                "pub_year": "2023",
+                "citation": "IEEE Transactions on Circuits and Systems for Video Technology, 2023"
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:u5HHmVD_uO8C",
+            "num_citations": 25,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9229943154468101756",
+            "cites_id": [
+                "9229943154468101756"
+            ]
+        },
+        "0MDbs-8AAAAJ:_FxGoFyzp5QC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Towards real-world test-time adaptation: Tri-net self-training with balanced normalization",
+                "pub_year": "2024",
+                "citation": "Proceedings of the AAAI Conference on Artificial Intelligence 38 (13), 15126 …, 2024"
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:_FxGoFyzp5QC",
+            "num_citations": 12,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=8996552221556832198",
+            "cites_id": [
+                "8996552221556832198"
+            ]
+        },
+        "0MDbs-8AAAAJ:Tyk-4Ss8FVUC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "On the Robustness of Open-World Test-Time Training: Self-Training with Dynamic Prototype Expansion",
+                "pub_year": "2023",
+                "citation": "IEEE/CVF International Conference on Computer Vision 2023, 2023"
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:Tyk-4Ss8FVUC",
+            "num_citations": 11,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1482379448776293966",
+            "cites_id": [
+                "1482379448776293966"
+            ]
+        },
+        "0MDbs-8AAAAJ:2osOgNQ5qMEC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Revisiting Realistic Test-Time Training: Sequential Inference and Adaptation by Anchored Clustering Regularized Self-Training",
+                "pub_year": "2024",
+                "citation": "IEEE Transactions on Pattern Analysis and Machine Intelligence, 2024"
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:2osOgNQ5qMEC",
+            "num_citations": 10,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13722219076009649604",
+            "cites_id": [
+                "13722219076009649604"
+            ]
+        },
+        "0MDbs-8AAAAJ:eQOLeE2rZwMC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation",
+                "pub_year": "2024",
+                "citation": "IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024, 2024"
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:eQOLeE2rZwMC",
+            "num_citations": 7,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17634812308071465011",
+            "cites_id": [
+                "17634812308071465011"
+            ]
+        },
+        "0MDbs-8AAAAJ:qjMakFHDy7sC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "STFAR: Improving Object Detection Robustness at Test-Time by Self-Training with Feature Alignment Regularization",
+                "pub_year": "2023",
+                "citation": "arXiv preprint arXiv:2303.17937, 2023"
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:qjMakFHDy7sC",
+            "num_citations": 3,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16697474129572235092",
+            "cites_id": [
+                "16697474129572235092"
+            ]
+        },
+        "0MDbs-8AAAAJ:WF5omc3nYNoC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "CLIP-guided Source-free Object Detection in Aerial Images",
+                "pub_year": "2024",
+                "citation": "The International Geoscience and Remote Sensing Symposium (IGARSS) 2024, 2024"
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:WF5omc3nYNoC",
+            "num_citations": 1,
+            "citedby_url": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12573935687703695201",
+            "cites_id": [
+                "12573935687703695201"
+            ]
+        },
+        "0MDbs-8AAAAJ:hqOjcs7Dif8C": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "On the Adversarial Risk of Test Time Adaptation: An Investigation into Realistic Test-Time Data Poisoning",
+                "pub_year": "2024",
+                "citation": "arXiv preprint arXiv:2410.04682, 2024"
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:hqOjcs7Dif8C",
+            "num_citations": 0
+        },
+        "0MDbs-8AAAAJ:UebtZRa9Y70C": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "PointSAM: Pointly-Supervised Segment Anything Model for Remote Sensing Images",
+                "pub_year": "2024",
+                "citation": "arXiv preprint arXiv:2409.13401, 2024"
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:UebtZRa9Y70C",
+            "num_citations": 0
+        },
+        "0MDbs-8AAAAJ:LkGwnXOMwfcC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Exploring Human-in-the-Loop Test-Time Adaptation by Synergizing Active Learning and Model Selection",
+                "pub_year": "2024",
+                "citation": "arXiv preprint arXiv:2405.18911, 2024"
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:LkGwnXOMwfcC",
+            "num_citations": 0
+        },
+        "0MDbs-8AAAAJ:Se3iqnhoufwC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Towards Inference Stage Robust 3D Point Cloud Recognition",
+                "pub_year": "2024",
+                "citation": "DEEP LEARNING FOR 3D VISION: Algorithms and Applications, 257-280, 2024"
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:Se3iqnhoufwC",
+            "num_citations": 0
+        },
+        "0MDbs-8AAAAJ:ufrVoPGSRksC": {
+            "container_type": "Publication",
+            "source": "AUTHOR_PUBLICATION_ENTRY",
+            "bib": {
+                "title": "Appendix of” On the Robustness of Open-World Test-Time Training: Self-Training with Dynamic Prototype Expansion”",
+                "citation": ""
+            },
+            "filled": false,
+            "author_pub_id": "0MDbs-8AAAAJ:ufrVoPGSRksC",
+            "num_citations": 0
+        }
+    },
+    "citedby5y": 108,
+    "hindex": 6,
+    "hindex5y": 6,
+    "i10index": 5,
+    "i10index5y": 5,
+    "cites_per_year": {
+        "2022": 2,
+        "2023": 26,
+        "2024": 78
+    },
+    "updated": "2024-10-13 15:05:08.142649"
+}
