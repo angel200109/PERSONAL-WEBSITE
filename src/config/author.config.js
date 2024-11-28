@@ -1,7 +1,7 @@
 export default {
   name: "Lin Xin",
   avatar_pic: "./imgs/LinXi.webp",
-  role: "PhD Student",
+  role: "??",
   school: {
     name: "South China University of Technology",
     url: "https://www.scut.edu.cn/",
@@ -16,9 +16,18 @@ export default {
   },
 
   aboutMe: `
-    I am pursuing a Master-Doctor combined program and am currently a <b>PhD student</b> in <a href="https://github.com/Gorilla-Lab-SCUT">Geometric Perception and Intelligence Research Lab</a> (Gorilla Lab) in <a href="https://www2.scut.edu.cn/ee/">the School of Electronic and Information Engineering</a> at <a href="https://www.scut.edu.cn/">South China University of Technology</a> (SCUT) from <b>Sept. 2022</b>. My PhD supervisors are Prof. <a href="http://kuijia.site/">Kui Jia</a> and Dr. <a href="https://alex-xun-xu.github.io/">Xun Xu</a> (joint supervisor). <div style="height:var(--smallFont)"></div>
-    Prior to that, I received my <b>B.Eng.</b> from the School of Electronic and Information Engineering, SCUT in <b>Jun. 2021</b>. In <b>Sept. 2021</b>, I undertook an one-year <b>MSc study</b> in Gorilla Lab at SCUT under the supervision of Associate Prof. <a href="https://scholar.google.com/citations?user=pbNCoTwAAAAJ">Ke Chen</a>. <div style="height:var(--smallFont)"></div>
-    My recent research interests focus on <a style="color:#f75522" href="#Segment Anything / Foundation Model"><b>foundation model</b></a>, <a style="color:#55f722" href="#Test-Time Adaptation / Test-Time Training"><b>test-time adaptation</b></a> and <a style="color:#5522f7" href="#Weakly Supervised Learning"><b>weakly supervised learning</b></a>. I really enjoy my research and if you are interested or troubled by it, you are welcome to discuss it with me. <div style="height:var(--smallFont)"></div>
+     I am an Assistant Professor at the School of Artificial Intelligence, <a href="https://www.gzhu.edu.cn/" target="_blank" rel="noopener noreferrer">Guangzhou University</a>,
+      a member of Prof. <a href="https://github.com/Gorilla-Lab-SCUT" target="_blank" rel="noopener noreferrer">Jin Li</a> 
+     and Prof. <a href="https://ai.gzhu.edu.cn/info/1223/1077.htm" target="_blank" rel="noopener noreferrer">Chunsheng Yang</a>'s Lab. 
+     
+     I received my Ph.D. degree from <a href="https://www.scut.edu.cn/en/" target="_blank" rel="noopener noreferrer">South China University of Technology</a>, advised by Prof. 
+     <a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer">Dacheng Tao</a> and Prof. Changxing Ding. Before that, I received my M.S. degree majoring in Information and Communication Engineering at Shenzhen University, 
+     advised by Prof. <a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer">Lei Huang</a>. 
+
+     My research interests include <b style="color:#FFD700">computer vision</b>, <b style="color:#f75522">multi-modality learning</b>, 
+     <b style="color:#55f722">visual relationship detection</b>, and <b style="color:#5522f7">multimodal LLMs</b>.
+     <div style="height:var(--smallFont)"></div>
+
     📜 Download my <a href="./cv/CV for Su.Yongyi(2024).pdf" target="_blank">CV</a>.
     `,
 
