@@ -14,7 +14,6 @@ import News from "../components/Home/News.vue";
 import AcademicFootprint from "../components/Home/AcademicFootprint.vue";
 import Publication from "../components/Home/Publication.vue";
 import Visit from "../components/icons/Visit.vue";
-
 import Discussion from "../components/Home/Discussion.vue";
 
 import Name from "../components/icons/Name.vue";
@@ -444,18 +443,20 @@ export default {
             :googleScholarInfo="googleScholarInfo"
           />
         </div>
-        <div class="BlockItem" style="margin-top: 30px">
+
+        <!-- 专家栏 -->
+        <!-- <div class="BlockItem" style="margin-top: 30px">
           <CoAuthor
             largeFont="var(--largeFont)"
             smallFont="var(--smallFont)"
             :screenWidth="screenWidth"
           />
-        </div>
-        <div class="VisitBlock" style="margin-top: 30px; width: 100%">
+        </div> -->
+        <!-- <div class="VisitBlock" style="margin-top: 30px; width: 100%">
           <div style="display: flex; align-items: center; margin-bottom: 20px">
-            <!-- <div style="width: var(--largeFont); height: var(--largeFont); display: inline-block; padding-right: 10px; box-sizing: content-box;">
+            //<div style="width: var(--largeFont); height: var(--largeFont); display: inline-block; padding-right: 10px; box-sizing: content-box;">
                   <Visit/>
-              </div> -->
+              </div> //
             <div
               style="
                 font-size: var(--largeFont);
@@ -496,7 +497,7 @@ export default {
               ></div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div id="footer"><small>Updated Oct 14, 2024</small></div>
       </div>

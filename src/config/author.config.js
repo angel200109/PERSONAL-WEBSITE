@@ -45,20 +45,25 @@ export default {
   academicFootprints: {
     "Education Background": [
       [
-        "<b>Master-Doctor program in South China Univeristy of Technology</b>",
-        "2021.09-Now",
-        "Supervisor: Prof. Kui Jia and Dr. Xun Xu",
+        "<b>Ph.D degree: Sep. 2018 - Oct. 2022</b>",
+        "School of Electronic and Information Engineering, South China University of Technology (SCUT), Guangzhou, China",
+        "Supervisor: Prof. Dacheng Tao (IEEE Fellow) and Prof. Changxing Ding",
       ],
       [
-        "<b>B.Eng in South China Univeristy of Technology</b>",
-        "2017.09-2021.06",
+        "<b>M.S degree: Sept. 2015 -Jul. 2018</b>",
+        "College of Electronic and Information Engineering, Shenzhen University (SZU), Shenzhen, China",
+        "Supervisor: Prof. Lei Huang",
+      ],
+      [
+        "<b>B.E degree: Sept. 2010 - Jul. 2014</b>",
+        "School of Computer Science and Cyber Engineering, Guangzhou University (GZU), Guangzhou, China",
       ],
     ],
     "Academic Services": [
       ["<b>Journal Reviewer</b>", "TPAMI, TIP, TCSVT, TMLR"],
       [
         "<b>Conference Reviewer</b>",
-        "ICML, ICLR, NeurIPS, ACM MM, CVPR, ECCV, ACCV, etc.",
+        " ICML, ICLR, NeurIPS, ACM MM, CVPR, AAAI, ECCV, etc.",
       ],
     ],
   },
@@ -68,6 +73,8 @@ export default {
     "Test-Time Adaptation / Test-Time Training",
     "Weakly Supervised Learning",
   ],
+
+  // 论文卡片
   publications: {
     2024: [
       {
