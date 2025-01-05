@@ -1,46 +1,44 @@
 export default {
   name: "Lin Xin",
   avatar_pic: "./imgs/LinXi.webp",
-  role: "??",
+  role: "Assistant Professor",
   school: {
-    name: "South China University of Technology",
-    url: "https://www.scut.edu.cn/",
+    name: "Guangzhou University",
+    url: "https://www.gzhu.edu.cn/",
   },
   college: { name: "", url: "" },
-  email: "eesuyongyi@mail.scut.edu.cn",
+  email: "linxin94@gzhu.edu.cn",
   options: {
     "Google Scholar":
       "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=XpMnJ1QAAAAJ",
-    GitHub: "https://github.com/Dyb3438",
+    GitHub: "/404",
     OpenReview: "https://openreview.net/profile?id=~Xin_Lin2",
   },
 
   aboutMe: `
      I am an Assistant Professor at the School of Artificial Intelligence, <a href="https://www.gzhu.edu.cn/" target="_blank" rel="noopener noreferrer">Guangzhou University</a>,
-      a member of Prof. <a href="https://github.com/Gorilla-Lab-SCUT" target="_blank" rel="noopener noreferrer">Jin Li</a> 
+      a member of Prof. <a href="https://iaib.gzhu.edu.cn/info/1232/1021.htm" target="_blank" rel="noopener noreferrer">Jin Li</a> 
      and Prof. <a href="https://ai.gzhu.edu.cn/info/1223/1077.htm" target="_blank" rel="noopener noreferrer">Chunsheng Yang</a>'s Lab. 
      
      I received my Ph.D. degree from <a href="https://www.scut.edu.cn/en/" target="_blank" rel="noopener noreferrer">South China University of Technology</a>, advised by Prof. 
-     <a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer">Dacheng Tao</a> and Prof. Changxing Ding. Before that, I received my M.S. degree majoring in Information and Communication Engineering at Shenzhen University, 
-     advised by Prof. <a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer">Lei Huang</a>. 
+     <a href="https://dr.ntu.edu.sg/cris/rp/rp02343" target="_blank" rel="noopener noreferrer">Dacheng Tao</a> and Prof. <a href="https://www2.scut.edu.cn/ft/2021/1102/c29779a449569/page.htm" target="_blank" rel="noopener noreferrer">Changxing Ding</a>. Before that, I received my M.S. degree majoring in Information and Communication Engineering at Shenzhen University, 
+     advised by Prof. <a href="https://ceie.szu.edu.cn/info/1014/1498.htm" target="_blank" rel="noopener noreferrer">Lei Huang</a>. 
 
      My research interests include <b style="color:#FFD700">computer vision</b>, <b style="color:#f75522">multi-modality learning</b>, 
      <b style="color:#55f722">visual relationship detection</b>, and <b style="color:#5522f7">multimodal LLMs</b>.
      <div style="height:var(--smallFont)"></div>
-
-    📜 Download my <a href="./cv/CV for Su.Yongyi(2024).pdf" target="_blank">CV</a>.
     `,
 
-  news: [
-    `March 2024: Our work on <b>CLIP-guided Source-free Object Detection in Aerial Images</b> was accepted by IGARSS 2024 as <b>Oral presentation</b>. Congratulations to Nanqing Liu!`,
-    `Feb 2024: Our work on <b>Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation</b> was accepted by CVPR 2024. Congratulations to Haojie Zhang!`,
-    `Feb 2024: Our work on <b>Revisiting Realistic Test-Time Training: Sequential Inference and Adaptation by Anchored Clustering Regularized Self-Training</b> was accepted by TPAMI 2024. Congratulations!`,
-    `Dec 2023: Our work on <b>Towards Real-World Test-Time Adaptation: Tri-net Self-Training with Balanced Normalization</b> was accepted by AAAI 2024.`,
-    `Nov 2023: I'm studying at <a href='https://www.a-star.edu.sg/i2r'>I<sup>2</sup>R, A*STAR</a> as a visit student, funded by <a href='https://www.csc.edu.cn/'>CSC</a>, due to Nov 2025.`,
-    `Jul 2023: Our work on <b>On the Robustness of Open-World Test-Time Training: Self-Training with Dynamic Prototype Expansion</b> was accepted by <b>ICCV 2023 as Oral presentation</b>. Congratulations to Yushu Li!`,
-    `May 2023: Our work on <b>Weakly Supervised 3D Point Cloud Segmentation via Multi-Prototype Learning</b> was accepted by IEEE Transactions on Circuits and Systems for Video Technology (TCSVT).`,
-    `Sep 2022: Our work on <b>Revisiting Realistic Test-Time Training: Sequential Inference and Adaptation by Anchored Clustering</b> was accepted by NeurIPS 2022.`,
-  ],
+  // news: [
+  //   `March 2024: Our work on <b>CLIP-guided Source-free Object Detection in Aerial Images</b> was accepted by IGARSS 2024 as <b>Oral presentation</b>. Congratulations to Nanqing Liu!`,
+  //   `Feb 2024: Our work on <b>Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation</b> was accepted by CVPR 2024. Congratulations to Haojie Zhang!`,
+  //   `Feb 2024: Our work on <b>Revisiting Realistic Test-Time Training: Sequential Inference and Adaptation by Anchored Clustering Regularized Self-Training</b> was accepted by TPAMI 2024. Congratulations!`,
+  //   `Dec 2023: Our work on <b>Towards Real-World Test-Time Adaptation: Tri-net Self-Training with Balanced Normalization</b> was accepted by AAAI 2024.`,
+  //   `Nov 2023: I'm studying at <a href='https://www.a-star.edu.sg/i2r'>I<sup>2</sup>R, A*STAR</a> as a visit student, funded by <a href='https://www.csc.edu.cn/'>CSC</a>, due to Nov 2025.`,
+  //   `Jul 2023: Our work on <b>On the Robustness of Open-World Test-Time Training: Self-Training with Dynamic Prototype Expansion</b> was accepted by <b>ICCV 2023 as Oral presentation</b>. Congratulations to Yushu Li!`,
+  //   `May 2023: Our work on <b>Weakly Supervised 3D Point Cloud Segmentation via Multi-Prototype Learning</b> was accepted by IEEE Transactions on Circuits and Systems for Video Technology (TCSVT).`,
+  //   `Sep 2022: Our work on <b>Revisiting Realistic Test-Time Training: Sequential Inference and Adaptation by Anchored Clustering</b> was accepted by NeurIPS 2022.`,
+  // ],
 
   academicFootprints: {
     "Education Background": [
@@ -76,300 +74,189 @@ export default {
 
   // 论文卡片
   publications: {
-    2024: [
+    2020: [
       {
-        image: "./imgs/2024_SuEtAl_TTDP.png",
+        image: "./imgs/2020_GPS-Net.png",
         title:
-          "On the Adversarial Risk of Test Time Adaptation: An Investigation into Realistic Test-Time Data Poisoning",
-        author:
-          "<b>Yongyi Su</b>, Yushu Li, Nanqing Liu, Kui Jia, Xulei Yang, Chuan-Sheng Foo and Xun Xu",
-        publisher: "Preprint, 2024",
+          "GPS-Net: Graph Property Sensing Network for Scene Graph Generation",
+        author: "<b>Xin Lin</b>, Changxing Ding, Jinquan Zeng, Dacheng Tao ",
+        publisher:
+          "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2020 (Oral presentation)",
         keywords: [
-          "Test-Time Adaptation",
-          "Data Poisoning",
-          "Adversarial Attack",
+          "Scene Graph Generation",
+          "Message Passing",
+          "Visual Relationship Detection",
         ],
+        citations: "290",
+        searchCitations:
+          "https://scholar.google.com/scholar?cites=6322890861074553647&as_sdt=2005&sciodt=0,5&hl=en",
         options: {
-          PDF: "https://arxiv.org/abs/2410.04682",
-          Bibtex: "./bibtexs/2024_SuEtAl_TTDP.bib",
+          PDF: "https://arxiv.org/abs/2003.12962",
+          Bibtex: "./bibtexs/2020_GPS-Net.bib",
+          Code: "https://github.com/siml3/GPS-Net",
         },
-        paper_url: "https://arxiv.org/pdf/2410.04682",
+        paper_url: "https://arxiv.org/abs/2003.12962",
+        new: true,
+      },
+    ],
+    2022: [
+      {
+        image: "./imgs/2022_RU-Net.png",
+        title:
+          "RU-Net: Regularized Unrolling Network for Scene Graph Generation",
+        author:
+          "<b>Xin Lin</b>, Changxing Ding, Jing Zhang, Yibing Zhan, Dacheng Tao",
+        publisher:
+          "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022  ",
+        keywords: [
+          "Scene Graph Generation",
+          "Algorithm Unrolling",
+          "Visual Relationship Detection",
+        ],
+        citations: "47",
+        searchCitations:
+          "https://scholar.google.com/scholar?cites=3765664053223640870&as_sdt=2005&sciodt=0,5&hl=en",
+        options: {
+          PDF: "https://arxiv.org/abs/2205.01297",
+          Bibtex: "./bibtexs/2022_RU-Net.bib",
+          Code: "https://github.com/siml3/ru-net",
+        },
+        paper_url: "https://arxiv.org/abs/2205.01297",
         new: true,
       },
       {
-        image: "./imgs/2024_LiuEtAl_PointSAM.jpg",
+        image: "./imgs/2022_HL-Net.png",
         title:
-          "PointSAM: Pointly-Supervised Segment Anything Model for Remote Sensing Images",
+          "HL-Net: Heterophily Learning Network for Scene Graph Generation",
         author:
-          "Nanqing Liu, Xun Xu, <b>Yongyi Su</b>, Haojie Zhang and Heng-Chao Li",
-        publisher: "Preprint, 2024",
-        keywords: ["Segment Anything", "Foundation Model", "Remote Sensing"],
+          "<b>Xin Lin</b>, Changxing Ding, Yibing Zhan, Zijian Li, Dacheng Tao",
+        publisher:
+          "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022 ",
+        keywords: [
+          "Scene Graph Generation",
+          "Heterophily Learning",
+          "Visual Relationship Detection",
+        ],
+        citations: "58",
+        searchCitations:
+          "https://scholar.google.com/scholar?cites=6746926126987228342&as_sdt=2005&sciodt=0,5&hl=en",
         options: {
-          PDF: "https://arxiv.org/abs/2409.13401",
-          Bibtex: "./bibtexs/2024_LiuEtAl_PointSAM.bib",
-          "Project Page": "https://github.com/Lans1ng/PointSAM",
-          Code: "https://github.com/Lans1ng/PointSAM",
+          PDF: "https://arxiv.org/abs/2205.01316",
+          Bibtex: "./bibtexs/2022_HL-Net.bib",
+          Code: "https://github.com/siml3/hl-net",
         },
-        paper_url: "https://arxiv.org/pdf/2409.13401",
+        paper_url: "https://arxiv.org/abs/2205.01316",
         new: true,
-      },
-      {
-        image: "./imgs/2024_LiEtAl_HILTTA.webp",
-        title:
-          "Exploring Human-in-the-Loop Test-Time Adaptation by Synergizing Active Learning and Model Selection",
-        author:
-          "Yushu Li<equal></equal>, <b>Yongyi Su<equal></equal></b>, Xulei Yang, Kui Jia and Xun Xu",
-        publisher: "Preprint, 2024",
-        keywords: [
-          "Test-Time Adaptation",
-          "Human-in-the-Loop",
-          "Model Selection",
-          "Active Learning",
-        ],
-        options: {
-          PDF: "https://arxiv.org/abs/2405.18911",
-          Bibtex: "./bibtexs/2024_LiEtAl_HILTTA.bib",
-        },
-        paper_url: "https://arxiv.org/pdf/2405.18911",
-        // new: true
-      },
-      {
-        image: "./imgs/2024_SuEtAl_TTAC-.webp",
-        title:
-          "Revisiting Realistic Test-Time Training: Sequential Inference and Adaptation by Anchored Clustering Regularized Self-Training",
-        author:
-          "<b>Yongyi Su<equal></equal></b>, Xun Xu<equal></equal>, Tianrui Li and Kui Jia",
-        publisher:
-          "IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>), 2024",
-        keywords: [
-          "Test-Time Training",
-          "Self Training",
-          "Anchored Clustering",
-          "Feature Alignment",
-        ],
-        options: {
-          PDF: "https://arxiv.org/abs/2303.10856",
-          Bibtex: "./bibtexs/2024_SuEtAl_TTAC++.bib",
-          "Project Page": "https://github.com/Gorilla-Lab-SCUT/TTAC2",
-          Code: "https://github.com/Gorilla-Lab-SCUT/TTAC2",
-        },
-        // new: true,
-        paper_url: "https://arxiv.org/pdf/2303.10856",
-      },
-      {
-        image: "./imgs/2023_SuEtAl_TRIBE.webp",
-        title:
-          "Towards Real-World Test-Time Adaptation: Tri-net Self-Training with Balanced Normalization",
-        author: "<b>Yongyi Su</b>, Xun Xu and Kui Jia",
-        publisher:
-          "Proceedings of the AAAI conference on artificial intelligence (<b>AAAI</b>), 2024",
-        keywords: [
-          "Test-Time Adaptation",
-          "Real-World Test-Time Adaptation",
-          "Balanced BN",
-          "Self Training",
-        ],
-        options: {
-          PDF: "https://arxiv.org/abs/2309.14949",
-          Bibtex: "./bibtexs/2023_SuEtAl_TRIBE.bib",
-          "Project Page": "https://github.com/Gorilla-Lab-SCUT/TRIBE",
-          Code: "https://github.com/Gorilla-Lab-SCUT/TRIBE",
-          Poster: "./posters/2024_SuEtAl_TRIBE.pdf",
-        },
-        paper_url: "https://arxiv.org/pdf/2309.14949",
-        // new: true
-      },
-      {
-        image: "./imgs/2024_ZhangEtAl_WeSAM.webp",
-        title:
-          "Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation",
-        author:
-          "Haojie Zhang<equal></equal>, <b>Yongyi Su<equal></equal></b>, Xun Xu and Kui Jia",
-        publisher:
-          "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024",
-        keywords: [
-          "Segment Anything",
-          "Foundation Model",
-          "Weakly Supervised Learning",
-          "Domain Adaptation",
-        ],
-        options: {
-          PDF: "https://arxiv.org/abs/2312.03502",
-          Bibtex: "./bibtexs/2024_ZhangEtAl_WeSAM.bib",
-          "Project Page":
-            "https://zhang-haojie.github.io/project-pages/wesam.html",
-          Code: "https://github.com/Zhang-Haojie/WeSAM",
-        },
-        // new: true,
-        paper_url: "https://arxiv.org/pdf/2312.03502",
-      },
-      {
-        image: "./imgs/2024_LiuEtAl_SFOD.webp",
-        title: "CLIP-guided Source-free Object Detection in Aerial Images",
-        author:
-          "Nanqing Liu, Xun Xu, <b>Yongyi Su</b>, Chengxin Liu, Peiliang Gong and Heng-Chao Li",
-        publisher:
-          "International Geoscience and Remote Sensing Symposium (<b>IGARSS</b>), 2024 (Oral presentation)",
-        keywords: [
-          "CLIP",
-          "Foundation Model",
-          "Object Detection",
-          "Source-Free Domain Adaptation",
-        ],
-        options: {
-          PDF: "https://arxiv.org/abs/2401.05168",
-          Bibtex: "./bibtexs/2024_LiuEtAl_SFOD.bib",
-          "Project Page": "https://github.com/Lans1ng/SFOD-RS",
-          Code: "https://github.com/Lans1ng/SFOD-RS",
-        },
-        paper_url: "https://arxiv.org/pdf/2401.05168",
-        // new: true
       },
     ],
     2023: [
       {
-        image: "./imgs/2023_LiEtAl_OWTTT.webp",
+        image: "./imgs/2023_Eliminating.png",
         title:
-          "On the Robustness of Open-World Test-Time Training: Self-Training with Dynamic Prototype Expansion",
-        author: "Yushu Li, Xun Xu, <b>Yongyi Su</b> and Kui Jia",
-        publisher:
-          "IEEE/CVF International Conference on Computer Vision (<b>ICCV</b>), 2023 (Oral presentation)",
-        keywords: [
-          "Test-Time Training",
-          "Open-World Test-Time Training",
-          "Domain Adaptation",
-          "Self Training",
-        ],
-        options: {
-          PDF: "https://arxiv.org/abs/2308.09942",
-          Bibtex: "./bibtexs/2023_LiEtAl_OWTTT.bib",
-          "Project Page": "https://yushu-li.github.io/owttt-site",
-          Code: "https://github.com/Yushu-Li/OWTTT",
-          Poster: "./posters/2023_LiEtAl_OWTTT.pdf",
-        },
-        paper_url: "https://arxiv.org/pdf/2308.09942",
-      },
-      {
-        image: "./imgs/2023_SuEtAl_MulPro.webp",
-        title:
-          "Weakly Supervised 3D Point Cloud Segmentation via Multi-Prototype Learning",
-        author: "<b>Yongyi Su</b>, Xun Xu and Kui Jia",
-        publisher:
-          "IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>), 2023",
-        keywords: [
-          "Weakly Supervised Learning",
-          "Point Cloud",
-          "Semantic Segmentation",
-        ],
-        options: {
-          PDF: "https://arxiv.org/abs/2205.03137",
-          Bibtex: "./bibtexs/2023_SuEtAl_MulPro.bib",
-          // 'Project Page': '',
-          // 'Code': ''
-        },
-        paper_url: "https://arxiv.org/pdf/2205.03137",
-      },
-      {
-        image: "./imgs/2023_ChenEtAl_STFAR.webp",
-        title:
-          "STFAR: Improving Object Detection Robustness at Test-Time by Self-Training with Feature Alignment Regularization",
-        author: "Yijin Chen, Xun Xu, <b>Yongyi Su</b> and Kui Jia",
-        publisher: "Preprint, 2023",
-        keywords: [
-          "Test-Time Training",
-          "Object Detection",
-          "Self Training",
-          "Feature Alignment",
-        ],
-        options: {
-          PDF: "https://arxiv.org/abs/2303.17937",
-          Bibtex: "./bibtexs/2023_ChenEtAl_STFAR.bib",
-          // 'Project Page': '',
-          // 'Code': ''
-        },
-        paper_url: "https://arxiv.org/pdf/2303.17937",
-      },
-    ],
-
-    2022: [
-      {
-        image: "./imgs/2022_SuEtAl_TTAC.webp",
-        title:
-          "Revisiting Realistic Test-Time Training: Sequential Inference and Adaptation by Anchored Clustering",
+          "Eliminating Contextual Prior Bias for Semantic Image Editing via Dual-Cycle Diffusion",
         author:
-          "<b>Yongyi Su<equal></equal></b>, Xun Xu<equal></equal> and Kui Jia",
+          "Zuopeng Yang, Tianshu Chu, <b>Xin Lin</b>, Erdun Gao, Daqing Liu, Jie Yang, and Chaoyue Wang",
         publisher:
-          "Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2022",
+          "IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>),2023",
         keywords: [
-          "Test-Time Training",
-          "Anchored Clustering",
-          "Feature Alignment",
+          "Contextual prior bias",
+          "semantic image editing",
+          "Dual-Cycle Diffusion",
         ],
+        citations: "11",
+        searchCitations:
+          "https://scholar.google.com/scholar?cites=4135658823311622212&as_sdt=2005&sciodt=0,5&hl=en",
         options: {
-          PDF: "https://arxiv.org/abs/2206.02721",
-          Bibtex: "./bibtexs/2022_SuEtAl_TTAC.bib",
-          "Project Page": "./ProjectPage/2022_SuEtAl_TTAC",
-          Code: "https://github.com/Gorilla-Lab-SCUT/TTAC",
-          Poster: "./posters/2022_SuEtAl_TTAC.pdf",
+          PDF: "https://arxiv.org/abs/2302.02394",
+          Bibtex: "./bibtexs/2023_Eliminating.bib",
+          Code: "https://github.com/johndreamer/dualcyclediffsion",
         },
-        paper_url: "https://arxiv.org/pdf/2206.02721",
+        paper_url: "https://arxiv.org/abs/2302.02394",
+        new: true,
       },
     ],
+    2024: [
+      {
+        image: "./imgs/2024_TD2.png",
+        title:
+          "TD<sup>2</sup> -Net: Toward Denoising and Debiasing for Dynamic Scene Graph Generation",
+        author:
+          "<b>Xin Lin</b>, Chong Shi, Yibing Zhan, Zuopeng Yang, Yaqi Wu, Dacheng Tao",
+        publisher:
+          "Proceedings of the AAAI conference on artificial intelligence <b>(AAAI)</b>, 2024",
+        keywords: [
+          "Dynamic Scene Graph Generation",
+          "Visual Relationship Detection",
+        ],
+        citations: "2",
+        searchCitations:
+          "https://scholar.google.com/scholar?cites=9977376004623176491&as_sdt=2005&sciodt=0,5&hl=en",
+        options: {
+          PDF: "https://arxiv.org/abs/2401.12479",
+          Bibtex: "./bibtexs/2024_TD2.bib",
+        },
+        paper_url: "https://arxiv.org/abs/2401.12479",
+        new: true,
+      },
+    ],
+    // 2022: [
+    //   {
+    //     image: "./imgs/2022_SuEtAl_TTAC.webp",
+    //     title:
+    //       "Revisiting Realistic Test-Time Training: Sequential Inference and Adaptation by Anchored Clustering",
+    //     author:
+    //       "<b>Yongyi Su<equal></equal></b>, Xun Xu<equal></equal> and Kui Jia",
+    //     publisher:
+    //       "Advances in Neural Information Processing Systems (<b>NeurIPS</b>), 2022",
+    //     keywords: [
+    //       "Test-Time Training",
+    //       "Anchored Clustering",
+    //       "Feature Alignment",
+    //     ],
+    //     options: {
+    //       PDF: "https://arxiv.org/abs/2206.02721",
+    //       Bibtex: "./bibtexs/2022_SuEtAl_TTAC.bib",
+    //       "Project Page": "./ProjectPage/2022_SuEtAl_TTAC",
+    //       Code: "https://github.com/Gorilla-Lab-SCUT/TTAC",
+    //       Poster: "./posters/2022_SuEtAl_TTAC.pdf",
+    //     },
+    //     paper_url: "https://arxiv.org/pdf/2206.02721",
+    //   },
+    // ],
   },
 
   co_authors: {
-    "Kui Jia": {
-      image: "./imgs/co-authors/JiaKui.jpeg",
-      institute: "The Chinese University of Hong Kong, Shenzhen",
+    "Dacheng Tao": {
+      image: "./imgs/co-authors/DachengTao.png",
+      institute: "Nanyang Technological University",
       position: "Professor",
-      url: "http://kuijia.site/",
+      url: "https://dr.ntu.edu.sg/cris/rp/rp02343",
       relationship: "Teacher",
     },
-    "Xun Xu": {
-      image: "./imgs/co-authors/XuXun.jpeg",
-      institute: "Institute for Infocomm Research, A*STAR",
-      position: "Senior Scientist",
-      url: "https://alex-xun-xu.github.io/",
+    "Changxing Ding": {
+      image: "./imgs/co-authors/ChangxingDing.png",
+      institute: "South China University of Technology",
+      position: "Professor",
+      url: "https://www2.scut.edu.cn/ft/2021/1102/c29779a449569/page.htm",
       relationship: "Teacher",
     },
-
-    "Nanqing Liu": {
-      image: "./imgs/co-authors/NanqingLiu.png",
-      institute: "Southwest Jiaotong University, Chengdu",
-      position: "PhD Student",
-      url: "https://scholar.google.com/citations?user=x3dCJrAAAAAJ",
+    "Yibing Zhan": {
+      image: "./imgs/co-authors/YibingZhan.jpg",
+      institute: "JD Explore Academy",
+      position: "Researcher",
+      url: "https://scholar.google.com/citations?user=rjd977cAAAAJ&hl=en",
     },
-
-    "Chengxin Liu": {
-      image: "./imgs/co-authors/ChengxinLiu.jpg",
-      institute: "Huazhong University of Science and Technology, Wuhan",
-      position: "PhD Student",
-      url: "https://cxliu0.github.io/",
+    "Zuopeng Yang": {
+      image: "./imgs/co-authors/ZuopengYang.jpg",
+      institute: "Guangzhou University",
+      position: "Assistant Professor",
+      url: "https://ai.gzhu.edu.cn/info/1223/1095.htm",
     },
-
-    "Peiliang Gong": {
-      image: "./imgs/co-authors/PeiliangGong.jpg",
-      institute: "Nanjing University of Aeronautics and Astronautics, Nanjing",
-      position: "PhD Student",
-      url: "https://scholar.google.com/citations?user=0AQhhVQAAAAJ",
-    },
-
-    "Yushu Li": {
-      image: "./imgs/co-authors/yushu.jpeg",
-      institute: "South China University of Technology, Guangzhou",
-      position: "Master Student",
-      url: "https://yushu-li.github.io/",
-    },
-    "Haojie Zhang": {
-      image: "./imgs/co-authors/HaojieZhang.jpeg",
-      institute: "South China University of Technology, Guangzhou",
-      position: "Master Student",
-      url: "https://zhang-haojie.github.io",
-    },
-    "Yijin Chen": {
-      image: "./imgs/co-authors/YijinChen.jpg",
-      institute: "South China University of Technology, Guangzhou",
-      position: "Master Student",
+    "Jing Zhang": {
+      image: "./imgs/co-authors/jingZhang.png",
+      institute: "The University of Sydney",
+      position: "Research Fellow",
+      url: "https://scholar.google.com/citations?user=9jH5v74AAAAJ&hl=en",
     },
   },
 

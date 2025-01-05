@@ -1,18 +1,18 @@
-const { createProxyMiddleware } = require('http-proxy-middleware')
+const { createProxyMiddleware } = require("http-proxy-middleware");
 
 module.exports = (req, res) => {
-  let target = ''
+  let target = "";
 
-  if (req.url.startsWith('/backend')) {
-    target = 'http://47.120.67.162'
+  if (req.url.startsWith("/backend")) {
+    target = "http://47.120.67.163";
+    // 本来是target = 'http://47.120.67.162'
   }
 
   createProxyMiddleware({
     target,
     changeOrigin: true,
     pathRewrite: {
-      '^/backend/': '/'
-    }
-  })(req, res)
-}
-
+      "^/backend/": "/",
+    },
+  })(req, res);
+};

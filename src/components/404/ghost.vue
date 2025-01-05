@@ -115,7 +115,7 @@ i {
   line-height: 1;
   font-weight: 400;
   font-style: normal;
-  speak: none;
+  speak-as: none;
   text-decoration: inherit;
   text-transform: none;
   text-rendering: auto;

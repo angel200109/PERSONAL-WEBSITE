@@ -95,7 +95,7 @@ export default {
   font-weight: bolder;
   background: white;
   color: transparent;
-  -webkit-background-clip: text;
+  background-clip: text;
   height: max(2.5vw, 30px);
   position: absolute;
   top: calc(50vh - max(2.5vw, 30px));
@@ -109,7 +109,7 @@ export default {
   font-weight: bolder;
   background: darkslategray;
   color: transparent;
-  -webkit-background-clip: text;
+  background-clip: text;
   position: absolute;
   top: calc(50vh - max(2.5vw, 30px));
 }

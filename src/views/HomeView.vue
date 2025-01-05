@@ -20,7 +20,7 @@ import Name from "../components/icons/Name.vue";
 
 import GoogleScholar from "../components/icons/GoogleScholar.vue";
 import Github from "../components/icons/Github.vue";
-
+import NameCopy from "../components/icons/Name copy.vue";
 import fetchJSONP from "fetch-jsonp";
 
 export default {
@@ -40,6 +40,7 @@ export default {
     Visit,
     Discussion,
     Name,
+    NameCopy,
     GoogleScholar,
     Github,
   },
@@ -276,9 +277,10 @@ export default {
     ref="body"
     :style="`--smallFont:` + this.smallFont + '; --largeFont:' + this.largeFont"
   >
+    <!-- 左部分 -->
     <div class="AvatarBlock" ref="AvatarBlock">
       <div class="AvatarPic">
-        <Avatar size="max(var(--size), 180px)" radius="20px"></Avatar>
+        <Avatar size="max(var(--size), 180px)" radius="30px"></Avatar>
       </div>
 
       <AuthorItem
@@ -287,33 +289,28 @@ export default {
         style="margin-top: 30px"
       >
         <!-- <template v-slot:Icon>
-          <User/>
+          <User />
         </template> -->
         <template v-slot:Text>
           👨🏻‍💻
-          <a href="./"
-            ><Name
-              style="
-                height: calc(var(--largeFont) * 1.5);
-                width: auto;
-                vertical-align: bottom;
-              "
-              id="name"
-          /></a>
+          <a href="./">
+            <NameCopy />
+          </a>
+
           <!-- {{authorName}} -->
         </template>
       </AuthorItem>
 
       <AuthorItem font_size="var(--smallFont)">
         <!-- <template v-slot:Icon>
-          <Degree/>
+          <Degree />
         </template> -->
-        <template v-slot:Text> 🎓 {{ authorRole }} </template>
+        <template v-slot:Text> 🪪 {{ authorRole }} </template>
       </AuthorItem>
 
       <AuthorItem font_size="var(--smallFont)">
         <!-- <template v-slot:Icon>
-          <Department/>
+          <Department />
         </template> -->
         <template v-slot:Text>
           🏫
@@ -331,9 +328,9 @@ export default {
       </AuthorItem>
 
       <AuthorItem font_size="var(--smallFont)">
-        <!-- <template v-slot:Icon>
-          <Mail/>
-        </template> -->
+        <template v-slot:Icon>
+          <Mail />
+        </template>
         <template v-slot:Text>
           📮 <a :href="this.EmailHref">{{ this.EmailShow }}</a>
         </template>
@@ -389,7 +386,8 @@ export default {
             <span>{{ key }}</span>
           </div>
         </a>
-        <a
+        <!-- 讨论室 -->
+        <!-- <a
           style="flex: 1"
           class="discussion_num_a"
           @click="openDiscussionRoom('Global')"
@@ -410,7 +408,7 @@ export default {
               {{ this.discussions.Global }}
             </span>
           </div>
-        </a>
+        </a> -->
       </div>
     </div>
 
@@ -445,13 +443,13 @@ export default {
         </div>
 
         <!-- 专家栏 -->
-        <!-- <div class="BlockItem" style="margin-top: 30px">
+        <div class="BlockItem" style="margin-top: 30px">
           <CoAuthor
             largeFont="var(--largeFont)"
             smallFont="var(--smallFont)"
             :screenWidth="screenWidth"
           />
-        </div> -->
+        </div>
         <!-- <div class="VisitBlock" style="margin-top: 30px; width: 100%">
           <div style="display: flex; align-items: center; margin-bottom: 20px">
             //<div style="width: var(--largeFont); height: var(--largeFont); display: inline-block; padding-right: 10px; box-sizing: content-box;">
@@ -499,7 +497,7 @@ export default {
           </div>
         </div> -->
 
-        <div id="footer"><small>Updated Oct 14, 2024</small></div>
+        <div id="footer"><small>Updated Jan 2, 2025</small></div>
       </div>
     </div>
 
@@ -531,9 +529,9 @@ export default {
   --size: 18vw;
   height: 100vh;
   padding: 2vw;
-
-  background-color: lightgray;
-  box-shadow: 1px 0 1px gray;
+  /* background-color: lightgray; */
+  background-color: #e5e5e5;
+  box-shadow: 1px 0 1px lightgray;
 }
 
 .RightBlock {

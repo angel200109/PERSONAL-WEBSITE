@@ -8,15 +8,15 @@ import HomeView from "../views/HomeView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    // {
+    //   path: "/",
+    //   name: "root",
+    //   redirect: (to) => {
+    //     return { path: "/" };
+    //   },
+    // },
     {
       path: "/",
-      name: "root",
-      redirect: (to) => {
-        return { path: "/home" };
-      },
-    },
-    {
-      path: "/home",
       name: "home",
       component: HomeView,
     },
@@ -34,11 +34,11 @@ const router = createRouter({
       component: () => import("../views/404.vue"),
       // component: () => import('../components/404/ghost.vue')
     },
-    // {
-    //   path: "/HappyNewYear",
-    //   name: "NewYear",
-    //   component: () => import("../views/NewYear.vue"),
-    // },
+    {
+      path: "/HappyNewYear",
+      name: "NewYear",
+      component: () => import("../views/NewYear.vue"),
+    },
     {
       path: "/:catchAll(.*)",
       name: "error",
