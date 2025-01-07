@@ -163,7 +163,7 @@ export default {
           "semantic image editing",
           "Dual-Cycle Diffusion",
         ],
-        citations: "11",
+        citations: "12",
         searchCitations:
           "https://scholar.google.com/scholar?cites=4135658823311622212&as_sdt=2005&sciodt=0,5&hl=en",
         options: {
