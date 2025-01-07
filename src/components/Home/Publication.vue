@@ -367,7 +367,7 @@ export default {
               </div>
 
               <!-- Scholar -->
-              <div
+              <!-- <div
                 class="PublicationScholar"
                 :style="`font-size:` + this.smallFont"
                 v-if="
@@ -393,12 +393,13 @@ export default {
                   <span>Citations: </span>
                   <span>{{ publication.scholarInfo.citation }}</span>
                 </a>
-              </div>
+              </div> -->
 
               <!-- Citation -->
               <div
                 class="PublicationScholar"
                 :style="`font-size:` + this.smallFont"
+                v-if="publication.citations > 0"
               >
                 <GoogleScholar
                   :style="

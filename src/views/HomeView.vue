@@ -328,9 +328,9 @@ export default {
       </AuthorItem>
 
       <AuthorItem font_size="var(--smallFont)">
-        <template v-slot:Icon>
+        <!-- <template v-slot:Icon>
           <Mail />
-        </template>
+        </template> -->
         <template v-slot:Text>
           📮 <a :href="this.EmailHref">{{ this.EmailShow }}</a>
         </template>
@@ -497,7 +497,7 @@ export default {
           </div>
         </div> -->
 
-        <div id="footer"><small>Updated Jan 2, 2025</small></div>
+        <div id="footer"><small>Updated Jan 5, 2025</small></div>
       </div>
     </div>
 
