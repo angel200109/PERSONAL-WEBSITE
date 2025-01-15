@@ -239,10 +239,24 @@ export default {
 
 <template>
   <div class="Publications">
-    <div class="title unselect">
-      <!-- <div class="icon" :style="`width:` + this.largeFont + '; height:' + this.largeFont">
-            <Publication/>
-        </div> -->
+    <!-- title -->
+    <h2
+      class="text-3xl sm:text-4xl 2xl:text-[40px] font-extrabold text-center mb-3 text-gray-700 mt-12"
+    >
+      🏆Selected Publications
+    </h2>
+    <h6
+      class="text-l sm:text-m 2xl:text-base font-extrabold text-center mb-3 text-gray-700"
+    >
+      <equal></equal> denotes `Equal Contribution`.
+    </h6>
+    <!-- <div class="title unselect">
+      <div
+        class="icon"
+        :style="`width:` + this.largeFont + '; height:' + this.largeFont"
+      >
+        <Publication />
+      </div>
       <span :style="`font-size:` + this.largeFont">
         🏆 Selected Publications
         <div
@@ -259,12 +273,13 @@ export default {
           {{ pub_len }}
         </div>
       </span>
-    </div>
+    </div> -->
 
+    <!-- card -->
     <div class="content" ref="content">
-      <div :style="`font-size:` + this.smallFont">
+      <!-- <div :style="`font-size:` + this.smallFont">
         <equal></equal> denotes `Equal Contribution`.
-      </div>
+      </div> -->
       <div class="YearBlock Item">
         <!-- <div class="Switcher">
           <div
@@ -397,24 +412,19 @@ export default {
 
               <!-- Citation -->
               <div
-                class="PublicationScholar"
+                class="PublicationScholar flex items-center"
                 :style="`font-size:` + this.smallFont"
                 v-if="publication.citations > 0"
               >
                 <GoogleScholar
-                  :style="
-                    `height:  calc(` +
-                    this.smallFont +
-                    ` * 1.1); vertical-align: text-bottom;`
-                  "
-                />&nbsp;
+                  :style="`height: calc(` + this.smallFont + ` * 1.1);`"
+                />
+                &nbsp;
                 <a
                   :href="publication.searchCitations"
                   target="_blank"
-                  style="
-                    text-decoration-color: #4285f4 !important;
-                    color: #4285f4 !important;
-                  "
+                  style=""
+                  class="HoverCitation"
                 >
                   <span>Citations: </span>
                   <span>{{ publication.citations }}</span>
@@ -742,7 +752,6 @@ export default {
 .Publication:hover {
   transition: 0.3s;
   box-shadow: 0px 0px 20px lightgray;
-  /* transform: translateY(-3px); */
 }
 
 .PublicationImage {
@@ -892,5 +901,25 @@ export default {
 .Publication_Mobile .OptionItem {
   color: white;
   background-color: var(--btn_color);
+}
+
+.HoverCitation {
+  position: relative; /* 为了使 ::after 定位 */
+  text-decoration: none; /* 去除默认的下划线 */
+  color: #4285f4 !important;
+}
+.HoverCitation::after {
+  content: ""; /* 创建伪元素 */
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  background-color: #4285f4; /* 下划线的颜色 */
+  transition: width 0.3s ease; /* 设置动画效果 */
+  @apply h-[1px] 2xl:h-[2px]; /* 下划线的高度 */
+}
+
+.HoverCitation:hover::after {
+  width: 100%; /* 鼠标悬停时宽度变为100%，从左到右 */
 }
 </style>

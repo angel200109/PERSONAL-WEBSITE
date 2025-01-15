@@ -10,20 +10,22 @@ import Next from "../components/icons/Next.vue";
 import AuthorItem from "../components/Home/AuthorItem.vue";
 import AboutMe from "../components/Home/AboutMe.vue";
 import CoAuthor from "../components/Home/CoAuthor.vue";
+import Co from "../components/Home/co.vue";
 import News from "../components/Home/News.vue";
 import AcademicFootprint from "../components/Home/AcademicFootprint.vue";
 import Publication from "../components/Home/Publication.vue";
 import Visit from "../components/icons/Visit.vue";
 import Discussion from "../components/Home/Discussion.vue";
-
 import Name from "../components/icons/Name.vue";
-
 import GoogleScholar from "../components/icons/GoogleScholar.vue";
 import Github from "../components/icons/Github.vue";
 import NameCopy from "../components/icons/Name copy.vue";
 import fetchJSONP from "fetch-jsonp";
+import Test from "../components/icons/test.vue";
+import LeftPart from "../components/Home/LeftPart.vue";
 
 export default {
+  name: "App",
   components: {
     Avatar,
     User,
@@ -34,6 +36,7 @@ export default {
     AboutMe,
     CoAuthor,
     News,
+    Co,
     AcademicFootprint,
     Next,
     Publication,
@@ -43,6 +46,8 @@ export default {
     NameCopy,
     GoogleScholar,
     Github,
+    Test,
+    LeftPart,
   },
 
   data() {
@@ -273,50 +278,56 @@ export default {
 
 <template>
   <div
-    class="body"
+    class="body font-sans text-gray-800 antialiased bg-gradient-to-br from-blue-50 via-white to-blue-50 transition-colors duration-300"
     ref="body"
     :style="`--smallFont:` + this.smallFont + '; --largeFont:' + this.largeFont"
   >
     <!-- 左部分 -->
     <div class="AvatarBlock" ref="AvatarBlock">
-      <div class="AvatarPic">
-        <Avatar size="max(var(--size), 180px)" radius="30px"></Avatar>
-      </div>
-
-      <AuthorItem
+      <LeftPart />
+      <!-- <AuthorItem
         font_size="var(--largeFont)"
         font_weight="bold"
-        style="margin-top: 30px"
+        style="margin-top: 20px"
       >
-        <!-- <template v-slot:Icon>
-          <User />
-        </template> -->
         <template v-slot:Text>
-          👨🏻‍💻
-          <a href="./">
-            <NameCopy />
-          </a>
-
-          <!-- {{authorName}} -->
+          <a href="./"> <NameCopy /> </a>
         </template>
-      </AuthorItem>
+      </AuthorItem> -->
 
-      <AuthorItem font_size="var(--smallFont)">
+      <!-- <div class="m-auto">
+        <h1 class="text-5xl font-bold mb-2 text-gray-600">Xin Lin</h1>
+      </div> -->
+
+      <AuthorItem style="margin-top: 20px">
         <!-- <template v-slot:Icon>
           <Degree />
         </template> -->
-        <template v-slot:Text> 🪪 {{ authorRole }} </template>
+        <template v-slot:Text>
+          <p
+            class="text-base mb-4 bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text animate-pulseSlow"
+          >
+            {{ authorRole }} |
+          </p>
+        </template>
       </AuthorItem>
 
-      <AuthorItem font_size="var(--smallFont)">
+      <AuthorItem>
         <!-- <template v-slot:Icon>
           <Department />
         </template> -->
         <template v-slot:Text>
-          🏫
-          <a :href="authorSchool.url" target="_blank">{{
-            authorSchool.name
-          }}</a>
+          <a
+            :href="authorSchool.url"
+            target="_blank"
+            class="hover:no-underline"
+          >
+            <p
+              class="text-m mb-4 bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text animate-pulseSlow"
+            >
+              {{ authorSchool.name }}
+            </p></a
+          >
           <div v-if="authorCollege.name != ``" style="display: inline-block">
             <span
               >,&nbsp&nbsp<a :href="authorCollege.url" target="_blank">{{
@@ -327,17 +338,8 @@ export default {
         </template>
       </AuthorItem>
 
-      <AuthorItem font_size="var(--smallFont)">
-        <!-- <template v-slot:Icon>
-          <Mail />
-        </template> -->
-        <template v-slot:Text>
-          📮 <a :href="this.EmailHref">{{ this.EmailShow }}</a>
-        </template>
-      </AuthorItem>
-
       <div class="Options">
-        <a
+        <!-- <a
           v-for="(value, key, index) in authorOptions"
           :href="value"
           target="_blank"
@@ -385,7 +387,8 @@ export default {
           >
             <span>{{ key }}</span>
           </div>
-        </a>
+        </a> -->
+
         <!-- 讨论室 -->
         <!-- <a
           style="flex: 1"
@@ -412,6 +415,7 @@ export default {
       </div>
     </div>
 
+    <!-- 右部分 -->
     <div class="RightBlock" ref="RightBlock">
       <div class="RightContent">
         <div class="BlockItem">
@@ -424,14 +428,14 @@ export default {
             :screenWidth="screenWidth"
           />
         </div> -->
-        <div class="BlockItem" style="margin-top: 30px">
+        <!-- <div class="BlockItem" style="margin-top: 30px">
           <AcademicFootprint
             largeFont="var(--largeFont)"
             smallFont="var(--smallFont)"
             :screenWidth="screenWidth"
           />
-        </div>
-        <div class="BlockItem" style="margin-top: 30px">
+        </div> -->
+        <div class="BlockItem" style="margin-top: 25px">
           <Publication
             largeFont="var(--largeFont)"
             smallFont="var(--smallFont)"
@@ -450,6 +454,7 @@ export default {
             :screenWidth="screenWidth"
           />
         </div>
+        <!-- <co></co> -->
         <!-- <div class="VisitBlock" style="margin-top: 30px; width: 100%">
           <div style="display: flex; align-items: center; margin-bottom: 20px">
             //<div style="width: var(--largeFont); height: var(--largeFont); display: inline-block; padding-right: 10px; box-sizing: content-box;">
@@ -497,7 +502,9 @@ export default {
           </div>
         </div> -->
 
-        <div id="footer"><small>Updated Jan 5, 2025</small></div>
+        <div id="footer" class="text-center mt-3">
+          <small>Updated Jan 10, 2025</small>
+        </div>
       </div>
     </div>
 
@@ -514,11 +521,14 @@ export default {
 </template>
 
 <style scoped>
+/* @import url("https://fonts.googleapis.com/css2?family=Lustria&family=NTR&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Quando&display=swap");
 .body {
   display: flex;
   width: 100vw;
   background: white;
   --left: max(280px, 28vw);
+  @apply font-sans text-gray-800 antialiased bg-gradient-to-br from-blue-50 via-white to-blue-50 transition-colors duration-300;
 }
 
 .AvatarBlock {
@@ -530,8 +540,11 @@ export default {
   height: 100vh;
   padding: 2vw;
   /* background-color: lightgray; */
-  background-color: #e5e5e5;
-  box-shadow: 1px 0 1px lightgray;
+  /* background-color: #e5e5e5; */
+  /* background-image: radial-gradient(at top right, #b7b6bb 0%, #e8eae9 100%); */
+  /* background-color: #e8eae9;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23b7b6bb' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E"); */
+  /* box-shadow: 1px 0 1px lightgray; */
 }
 
 .RightBlock {
@@ -577,6 +590,8 @@ export default {
   min-width: 180px;
   min-height: 180px;
   margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 0vh;
   animation: none;
   cursor: grab;
 }
@@ -773,5 +788,51 @@ export default {
   #footer {
     text-align: center;
   }
+}
+.leftItemFont {
+  position: relative; /* 为了使 ::after 定位 */
+  text-decoration: none; /* 去除默认的下划线 */
+  color: #36454f; /* 设置文本颜色 */
+  font-family: "Quando", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+}
+.leftItemFont::after {
+  content: ""; /* 创建伪元素 */
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px; /* 下划线的高度 */
+  background-color: #36454f; /* 下划线的颜色 */
+  transition: width 0.3s ease; /* 设置动画效果 */
+}
+
+.leftItemFont:hover::after {
+  width: 100%; /* 鼠标悬停时宽度变为100%，从左到右 */
+}
+.leftItemFontt {
+  position: relative; /* 为了使 ::after 定位 */
+  text-decoration: none; /* 去除默认的下划线 */
+  color: #517889; /* 设置文本颜色 */
+  font-family: "Quando", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+}
+.leftItemFontt::after {
+  content: ""; /* 创建伪元素 */
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px; /* 下划线的高度 */
+  background-color: #517889; /* 下划线的颜色 */
+  transition: width 0.3s ease; /* 设置动画效果 */
+}
+
+.leftItemFontt:hover::after {
+  width: 100%; /* 鼠标悬停时宽度变为100%，从左到右 */
 }
 </style>

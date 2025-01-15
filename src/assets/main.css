@@ -1,10 +1,12 @@
-@import './base.css';
+@import "./base.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 #app {
   width: 100vw;
   font-weight: normal;
   height: 100%;
-  /* position: fixed; */
 }
 
 /* a,
@@ -15,9 +17,7 @@
 } */
 
 @media (hover: hover) {
-  
 }
 
 @media (min-width: 1024px) {
- 
 }

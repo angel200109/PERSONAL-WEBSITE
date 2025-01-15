@@ -6,7 +6,6 @@ export default {
     name: "Guangzhou University",
     url: "https://www.gzhu.edu.cn/",
   },
-  college: { name: "", url: "" },
   email: "linxin94@gzhu.edu.cn",
   options: {
     "Google Scholar":
@@ -87,7 +86,7 @@ export default {
           "Message Passing",
           "Visual Relationship Detection",
         ],
-        citations: "290",
+        citations: "291",
         searchCitations:
           "https://scholar.google.com/scholar?cites=6322890861074553647&as_sdt=2005&sciodt=0,5&hl=en",
         options: {
