@@ -241,15 +241,15 @@ export default {
   <div class="Publications">
     <!-- title -->
     <h2
-      class="text-3xl sm:text-4xl 2xl:text-[40px] font-extrabold text-center mb-3 text-gray-700 mt-12"
+      class="catamaran text-3xl sm:text-4xl 2xl:text-[40px] font-extrabold text-center mb-3 text-gray-700 mt-12"
     >
       🏆Selected Publications
     </h2>
-    <h6
+    <!-- <h6
       class="text-l sm:text-m 2xl:text-base font-extrabold text-center mb-3 text-gray-700"
     >
       <equal></equal> denotes `Equal Contribution`.
-    </h6>
+    </h6> -->
     <!-- <div class="title unselect">
       <div
         class="icon"
@@ -459,6 +459,7 @@ export default {
                   </a>
                   <a
                     :href="value"
+                    target="_blank"
                     style="display: inline-block; flex: 10"
                     v-else-if="key == `Code`"
                   >
@@ -921,5 +922,16 @@ export default {
 
 .HoverCitation:hover::after {
   width: 100%; /* 鼠标悬停时宽度变为100%，从左到右 */
+}
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Quando&display=swap");
+.catamaran {
+  font-family: "Catamaran", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.biryani-extralight {
+  font-family: "Biryani", serif;
+  font-weight: 200;
+  font-style: normal;
 }
 </style>

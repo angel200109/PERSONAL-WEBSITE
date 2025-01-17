@@ -43,7 +43,7 @@ export default {
 <template>
   <div class="CoAuthor">
     <h2
-      class="text-3xl sm:text-4xl 2xl:text-[40px] font-extrabold text-center mb-5 mt-2 text-gray-700"
+      class="catamaran text-3xl sm:text-4xl 2xl:text-[40px] font-extrabold text-center mb-5 mt-2 text-gray-700"
     >
       🤗 Co-Authors
     </h2>
@@ -174,5 +174,11 @@ export default {
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Quando&display=swap");
+.catamaran {
+  font-family: "Catamaran", serif;
+  font-weight: 800;
+  font-style: normal;
 }
 </style>

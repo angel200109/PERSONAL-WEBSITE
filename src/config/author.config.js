@@ -28,17 +28,6 @@ export default {
      <div style="height:var(--smallFont)"></div>
     `,
 
-  // news: [
-  //   `March 2024: Our work on <b>CLIP-guided Source-free Object Detection in Aerial Images</b> was accepted by IGARSS 2024 as <b>Oral presentation</b>. Congratulations to Nanqing Liu!`,
-  //   `Feb 2024: Our work on <b>Improving the Generalization of Segmentation Foundation Model under Distribution Shift via Weakly Supervised Adaptation</b> was accepted by CVPR 2024. Congratulations to Haojie Zhang!`,
-  //   `Feb 2024: Our work on <b>Revisiting Realistic Test-Time Training: Sequential Inference and Adaptation by Anchored Clustering Regularized Self-Training</b> was accepted by TPAMI 2024. Congratulations!`,
-  //   `Dec 2023: Our work on <b>Towards Real-World Test-Time Adaptation: Tri-net Self-Training with Balanced Normalization</b> was accepted by AAAI 2024.`,
-  //   `Nov 2023: I'm studying at <a href='https://www.a-star.edu.sg/i2r'>I<sup>2</sup>R, A*STAR</a> as a visit student, funded by <a href='https://www.csc.edu.cn/'>CSC</a>, due to Nov 2025.`,
-  //   `Jul 2023: Our work on <b>On the Robustness of Open-World Test-Time Training: Self-Training with Dynamic Prototype Expansion</b> was accepted by <b>ICCV 2023 as Oral presentation</b>. Congratulations to Yushu Li!`,
-  //   `May 2023: Our work on <b>Weakly Supervised 3D Point Cloud Segmentation via Multi-Prototype Learning</b> was accepted by IEEE Transactions on Circuits and Systems for Video Technology (TCSVT).`,
-  //   `Sep 2022: Our work on <b>Revisiting Realistic Test-Time Training: Sequential Inference and Adaptation by Anchored Clustering</b> was accepted by NeurIPS 2022.`,
-  // ],
-
   academicFootprints: {
     "Education Background": [
       [
@@ -230,14 +219,14 @@ export default {
       institute: "Nanyang Technological University",
       position: "Professor",
       url: "https://dr.ntu.edu.sg/cris/rp/rp02343",
-      relationship: "Teacher",
+      // relationship: "Teacher",
     },
     "Changxing Ding": {
       image: "./imgs/co-authors/ChangxingDing.png",
       institute: "South China University of Technology",
       position: "Professor",
       url: "https://www2.scut.edu.cn/ft/2021/1102/c29779a449569/page.htm",
-      relationship: "Teacher",
+      // relationship: "Teacher",
     },
     "Yibing Zhan": {
       image: "./imgs/co-authors/YibingZhan.jpg",

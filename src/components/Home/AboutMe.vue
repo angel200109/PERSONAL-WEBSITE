@@ -23,7 +23,7 @@ export default {
       <!-- About Me -->
       <div>
         <h2
-          class="text-3xl sm:text-4xl 2xl:text-[40px] font-extrabold text-center mb-6 2xl:mb-8 text-gray-700"
+          class="catamaran text-3xl sm:text-4xl 2xl:text-[40px] font-extrabold text-center mb-6 2xl:mb-8 text-gray-700"
         >
           👨🏻‍💻 About Me
         </h2>
@@ -97,48 +97,58 @@ export default {
         <div
           class="bg-gray-100 rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:shadow-gray-500/50 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
         >
-          <h3 class="text-xl 2xl:text-3xl font-bold mb-2 text-gray-700">
+          <h3
+            class="catamaran text-xl 2xl:text-3xl font-bold mb-2 text-gray-700"
+          >
             🎓 Education Background
           </h3>
           <div class="flex items-center justify-between flex-wrap">
             <div class="mb-1">
-              <p class="text-l 2xl:text-2xl font-medium text-gray-700">
+              <p
+                class="text-l 2xl:text-2xl font-medium text-gray-600 font-semibold"
+              >
                 • Ph.D degree: Sep. 2018 - Oct. 2022
               </p>
-              <p class="text-l 2xl:text-2xl text-gray-500 hover:text-blue-500">
-                &nbsp; &nbsp; School of Electronic and Information Engineering,
-                South China University of Technology (SCUT), Guangzhou, China
+              <p class="text-l 2xl:text-2xl text-gray-600 hover:text-blue-500">
+                School of Electronic and Information Engineering, South China
+                University of Technology (SCUT), Guangzhou, China
               </p>
               <p
-                class="text-l 2xl:text-2xl font-medium text-gray-400 hover:text-yellow-500"
+                class="text-l 2xl:text-2xl font-medium text-gray-400 hover:text-[#6F52EE]"
               >
-                &nbsp; &nbsp; Supervisor: Prof. Dacheng Tao (IEEE Fellow) and
-                Prof. Changxing Ding
+                Supervisor: Prof. Dacheng Tao (IEEE Fellow) and Prof. Changxing
+                Ding
               </p>
             </div>
           </div>
           <div class="flex items-center justify-between flex-wrap">
             <div class="mb-1">
-              <p class="text-l 2xl:text-2xl font-medium text-gray-700">
+              <p
+                class="text-l 2xl:text-2xl font-medium text-gray-600 font-semibold"
+              >
                 • M.S degree: Sept. 2015 -Jul. 2018
               </p>
-              <p class="text-l 2xl:text-2xl text-gray-500 hover:text-blue-500">
-                &nbsp; &nbsp; College of Electronic and Information Engineering,
-                Shenzhen University (SZU), Shenzhen, China
+              <p class="text-l 2xl:text-2xl text-gray-600 hover:text-blue-500">
+                College of Electronic and Information Engineering, Shenzhen
+                University (SZU), Shenzhen, China
               </p>
-              <p class="text-l 2xl:text-2xl font-medium text-gray-400">
-                &nbsp; &nbsp; Supervisor: Prof. Lei Huang
+              <p
+                class="text-l 2xl:text-2xl font-medium text-gray-400 hover:text-[#6F52EE]"
+              >
+                Supervisor: Prof. Lei Huang
               </p>
             </div>
           </div>
           <div class="flex items-center justify-between flex-wrap">
             <div>
-              <p class="text-l 2xl:text-2xl font-medium text-gray-700">
+              <p
+                class="text-l 2xl:text-2xl font-medium text-gray-600 font-semibold"
+              >
                 • B.E degree: Sept. 2010 - Jul. 2014
               </p>
               <p class="text-l 2xl:text-2xl text-gray-600 hover:text-blue-500">
-                &nbsp; &nbsp; School of Computer Science and Cyber Engineering,
-                Guangzhou University (GZU), Guangzhou, China
+                School of Computer Science and Cyber Engineering, Guangzhou
+                University (GZU), Guangzhou, China
               </p>
             </div>
           </div>
@@ -147,25 +157,31 @@ export default {
         <div
           class="bg-gray-100 rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:shadow-gray-500/50 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
         >
-          <h3 class="text-xl 2xl:text-3xl font-bold mb-2 text-gray-700">
+          <h3
+            class="catamaran text-xl 2xl:text-3xl font-bold mb-2 text-gray-700"
+          >
             📑 Academic Services
           </h3>
           <div class="flex items-center justify-between flex-wrap">
             <div class="mb-1">
-              <p class="text-l 2xl:text-2xl font-medium text-gray-700">
+              <p
+                class="text-l 2xl:text-2xl font-medium text-gray-600 font-semibold"
+              >
                 • Journal Reviewer
               </p>
-              <p class="text-l 2xl:text-2xl text-gray-600 dark:text-gray-400">
+              <p class="text-l 2xl:text-2xl text-gray-600 hover:text-blue-500">
                 &nbsp; &nbsp; TPAMI, TIP, TCSVT, TMLR
               </p>
             </div>
           </div>
           <div class="flex items-center justify-between flex-wrap">
             <div>
-              <p class="text-l 2xl:text-2xl font-medium text-gray-700">
+              <p
+                class="text-l 2xl:text-2xl font-medium text-gray-600 font-semibold"
+              >
                 • Conference Reviewer
               </p>
-              <p class="text-l 2xl:text-2xl text-gray-600 dark:text-gray-400">
+              <p class="text-l 2xl:text-2xl text-gray-600 hover:text-blue-500">
                 &nbsp; &nbsp; ICML, ICLR, NeurIPS, ACM MM, CVPR, AAAI, ECCV,
                 etc.
               </p>
@@ -175,22 +191,6 @@ export default {
       </div>
     </div>
   </section>
-
-  <!-- <div class="AboutMe">
-    <div class="title unselect">
-      <div
-        class="icon"
-        :style="`width:` + this.largeFont + '; height:' + this.largeFont"
-      >
-        <Me />
-      </div>
-      <span :style="`font-size:` + this.largeFont">🐣 About Me</span>
-    </div>
-
-    <div class="content">
-      <span :style="`font-size:` + this.smallFont" v-html="content"></span>
-    </div>
-  </div> -->
 </template>
 
 <style scoped>
@@ -245,5 +245,16 @@ export default {
 .hoverLink:hover::after {
   transform: scaleX(1); /* 悬停时伪元素放大 */
   transform-origin: bottom left; /* 动画终点 */
+}
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Quando&display=swap");
+.catamaran {
+  font-family: "Catamaran", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.biryani-extralight {
+  font-family: "Biryani", serif;
+  font-weight: 200;
+  font-style: normal;
 }
 </style>

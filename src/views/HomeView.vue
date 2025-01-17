@@ -1,52 +1,30 @@
 <script>
-import Avatar from "../components/Home/Avatar.vue";
 import authorConfig from "../config/author.config";
 import apiConfig from "../config/api.config";
-import User from "../components/icons/User.vue";
-import Degree from "../components/icons/Degree.vue";
-import Department from "../components/icons/Department.vue";
-import Mail from "../components/icons/Mail.vue";
 import Next from "../components/icons/Next.vue";
 import AuthorItem from "../components/Home/AuthorItem.vue";
 import AboutMe from "../components/Home/AboutMe.vue";
 import CoAuthor from "../components/Home/CoAuthor.vue";
-import Co from "../components/Home/co.vue";
 import News from "../components/Home/News.vue";
-import AcademicFootprint from "../components/Home/AcademicFootprint.vue";
 import Publication from "../components/Home/Publication.vue";
-import Visit from "../components/icons/Visit.vue";
 import Discussion from "../components/Home/Discussion.vue";
-import Name from "../components/icons/Name.vue";
 import GoogleScholar from "../components/icons/GoogleScholar.vue";
 import Github from "../components/icons/Github.vue";
-import NameCopy from "../components/icons/Name copy.vue";
 import fetchJSONP from "fetch-jsonp";
-import Test from "../components/icons/test.vue";
 import LeftPart from "../components/Home/LeftPart.vue";
 
 export default {
   name: "App",
   components: {
-    Avatar,
-    User,
-    Degree,
-    Department,
-    Mail,
     AuthorItem,
     AboutMe,
     CoAuthor,
     News,
-    Co,
-    AcademicFootprint,
     Next,
     Publication,
-    Visit,
     Discussion,
-    Name,
-    NameCopy,
     GoogleScholar,
     Github,
-    Test,
     LeftPart,
   },
 
@@ -118,7 +96,7 @@ export default {
       },
     },
     isPC() {
-      return this.screenWidth >= 800;
+      return this.screenWidth >= 1280;
     },
   },
 
@@ -278,163 +256,24 @@ export default {
 
 <template>
   <div
-    class="body font-sans text-gray-800 antialiased bg-gradient-to-br from-blue-50 via-white to-blue-50 transition-colors duration-300"
+    class="flex body font-sans text-gray-800 antialiased bg-gradient-to-br from-blue-50 via-white to-blue-50 transition-colors duration-300"
     ref="body"
     :style="`--smallFont:` + this.smallFont + '; --largeFont:' + this.largeFont"
   >
     <!-- 左部分 -->
-    <div class="AvatarBlock" ref="AvatarBlock">
+    <div class="LeftBlock" ref="LeftBlock">
       <LeftPart />
-      <!-- <AuthorItem
-        font_size="var(--largeFont)"
-        font_weight="bold"
-        style="margin-top: 20px"
-      >
-        <template v-slot:Text>
-          <a href="./"> <NameCopy /> </a>
-        </template>
-      </AuthorItem> -->
-
-      <!-- <div class="m-auto">
-        <h1 class="text-5xl font-bold mb-2 text-gray-600">Xin Lin</h1>
-      </div> -->
-
-      <AuthorItem style="margin-top: 20px">
-        <!-- <template v-slot:Icon>
-          <Degree />
-        </template> -->
-        <template v-slot:Text>
-          <p
-            class="text-base mb-4 bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text animate-pulseSlow"
-          >
-            {{ authorRole }} |
-          </p>
-        </template>
-      </AuthorItem>
-
-      <AuthorItem>
-        <!-- <template v-slot:Icon>
-          <Department />
-        </template> -->
-        <template v-slot:Text>
-          <a
-            :href="authorSchool.url"
-            target="_blank"
-            class="hover:no-underline"
-          >
-            <p
-              class="text-m mb-4 bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text animate-pulseSlow"
-            >
-              {{ authorSchool.name }}
-            </p></a
-          >
-          <div v-if="authorCollege.name != ``" style="display: inline-block">
-            <span
-              >,&nbsp&nbsp<a :href="authorCollege.url" target="_blank">{{
-                authorCollege.name
-              }}</a></span
-            >
-          </div>
-        </template>
-      </AuthorItem>
-
-      <div class="Options">
-        <!-- <a
-          v-for="(value, key, index) in authorOptions"
-          :href="value"
-          target="_blank"
-        >
-          <div
-            :style="`--btn_color:` + optionColor(index)"
-            class="unselect"
-            v-if="key.includes('Google Scholar')"
-          >
-            <GoogleScholar
-              style="
-                height: var(--smallFont);
-                vertical-align: text-bottom;
-                margin-right: calc(var(--smallFont) * 0.5);
-              "
-            />
-            <span
-              style="font-weight: bold"
-              v-if="
-                'citedby' in googleScholarInfo &&
-                googleScholarInfo['citedby'] > 0
-              "
-              >Citations: {{ googleScholarInfo["citedby"] }}</span
-            >
-            <span v-else> {{ key }} </span>
-          </div>
-          <div
-            :style="`--btn_color:` + optionColor(index)"
-            class="unselect"
-            v-else-if="key.includes('GitHub')"
-          >
-            <Github
-              style="
-                height: var(--smallFont);
-                vertical-align: text-bottom;
-                margin-right: calc(var(--smallFont) * 0.5);
-              "
-            />
-            <span>{{ key }}</span>
-          </div>
-          <div
-            :style="`--btn_color:` + optionColor(index)"
-            class="unselect"
-            v-else
-          >
-            <span>{{ key }}</span>
-          </div>
-        </a> -->
-
-        <!-- 讨论室 -->
-        <!-- <a
-          style="flex: 1"
-          class="discussion_num_a"
-          @click="openDiscussionRoom('Global')"
-          v-if="isPC"
-        >
-          <div
-            :style="`--btn_color:` + optionColor(3)"
-            class="unselect"
-            style="position: relative"
-          >
-            <span class="discussion_text"> Discussion Room </span>
-            <span
-              class="discussion_num"
-              v-if="
-                'Global' in this.discussions && this.discussions['Global'] > 0
-              "
-            >
-              {{ this.discussions.Global }}
-            </span>
-          </div>
-        </a> -->
-      </div>
     </div>
 
     <!-- 右部分 -->
     <div class="RightBlock" ref="RightBlock">
       <div class="RightContent">
+        <!-- Aboutme and BackGround -->
         <div class="BlockItem">
           <AboutMe largeFont="var(--largeFont)" smallFont="var(--smallFont)" />
         </div>
-        <!-- <div class="BlockItem" style="margin-top: 30px; height: 400px">
-          <News
-            largeFont="var(--largeFont)"
-            smallFont="var(--smallFont)"
-            :screenWidth="screenWidth"
-          />
-        </div> -->
-        <!-- <div class="BlockItem" style="margin-top: 30px">
-          <AcademicFootprint
-            largeFont="var(--largeFont)"
-            smallFont="var(--smallFont)"
-            :screenWidth="screenWidth"
-          />
-        </div> -->
+
+        <!-- Publication -->
         <div class="BlockItem" style="margin-top: 25px">
           <Publication
             largeFont="var(--largeFont)"
@@ -446,7 +285,7 @@ export default {
           />
         </div>
 
-        <!-- 专家栏 -->
+        <!-- coAuthor -->
         <div class="BlockItem" style="margin-top: 30px">
           <CoAuthor
             largeFont="var(--largeFont)"
@@ -454,69 +293,12 @@ export default {
             :screenWidth="screenWidth"
           />
         </div>
-        <!-- <co></co> -->
-        <!-- <div class="VisitBlock" style="margin-top: 30px; width: 100%">
-          <div style="display: flex; align-items: center; margin-bottom: 20px">
-            //<div style="width: var(--largeFont); height: var(--largeFont); display: inline-block; padding-right: 10px; box-sizing: content-box;">
-                  <Visit/>
-              </div> //
-            <div
-              style="
-                font-size: var(--largeFont);
-                font-weight: bold;
-                display: inline-block;
-              "
-              class="unselect"
-            >
-              👀 Recent Visitors
-            </div>
-          </div>
-          <div class="VisitItem">
-            <div class="VisitDesc">
-              <marquee
-                scrollamount="2"
-                direction="up"
-                style="
-                  overflow-y: auto;
-                  height: 100%;
-                  padding-bottom: 10px;
-                  padding-right: 10px;
-                "
-              >
-                <li v-for="(visit, key) in visitNumber">
-                  <span style="font-size: var(--smallFont)"
-                    ><b>{{ visit }}</b> views from {{ key }}</span
-                  >
-                </li>
-              </marquee>
-            </div>
-            <div class="VisitGlobe">
-              <div
-                v-is="`script`"
-                id="clstr_globe"
-                style="width: 100%; height: 100%"
-                type="text/javascript"
-                :src="`https://clustrmaps.com/globe.js?d=` + this.globe_id"
-              ></div>
-            </div>
-          </div>
-        </div> -->
 
         <div id="footer" class="text-center mt-3">
-          <small>Updated Jan 10, 2025</small>
+          <small>Updated Jan 1, 2025</small>
         </div>
       </div>
     </div>
-
-    <Discussion
-      :largeFont="largeFont"
-      :smallFont="smallFont"
-      :screenWidth="screenWidth"
-      :channel="discussion_channel"
-      :discussion_url="discussion_url"
-      v-if="show_discussion && isPC"
-      @close="closeDiscussion"
-    />
   </div>
 </template>
 
@@ -531,7 +313,7 @@ export default {
   @apply font-sans text-gray-800 antialiased bg-gradient-to-br from-blue-50 via-white to-blue-50 transition-colors duration-300;
 }
 
-.AvatarBlock {
+.LeftBlock {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -539,12 +321,7 @@ export default {
   --size: 18vw;
   height: 100vh;
   padding: 2vw;
-  /* background-color: lightgray; */
-  /* background-color: #e5e5e5; */
-  /* background-image: radial-gradient(at top right, #b7b6bb 0%, #e8eae9 100%); */
-  /* background-color: #e8eae9;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23b7b6bb' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E"); */
-  /* box-shadow: 1px 0 1px lightgray; */
+  @apply bg-gradient-to-br from-blue-50 via-white to-blue-50;
 }
 
 .RightBlock {
@@ -731,12 +508,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   text-align: right;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 768px) {
   .body {
     flex-wrap: wrap;
   }
 
-  .AvatarBlock {
+  .LeftBlock {
     width: 100vw;
     min-width: 0;
     height: auto;
