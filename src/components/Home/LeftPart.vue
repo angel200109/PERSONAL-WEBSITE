@@ -4,6 +4,7 @@ import LgName from "../icons/LgName.vue";
 
 export default {
   name: "App",
+  props: ["largeFont", "smallFont"],
   components: {
     SmName,
     LgName,
@@ -11,7 +12,9 @@ export default {
 };
 </script>
 <template>
-  <div class="flex flex-col justify-center items-center m-auto space-y-[5%]">
+  <div
+    class="flex flex-col justify-center items-center m-auto space-y-2 xl:space-y-3 3xl:space-y-5 5xl:space-y-8 6xl:space-y-12"
+  >
     <!-- img -->
 
     <img
@@ -28,9 +31,11 @@ export default {
     </div>
 
     <!-- possition and institute -->
-    <div class="text-[#4b5563] flex flex-col justify-center items-center">
+    <div
+      class="text-[#4b5563] flex flex-col justify-center items-center space-y-0 3xl:space-y-2 5xl:space-y-5 6xl:space-y-6"
+    >
       <p
-        class="libre-franklin text-base xl:text-xl 2xl:text-2xl bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text animate-pulse"
+        class="libre-franklin text-base xl:text-xl 3xl:text-3xl 5xl:text-[40px] 6xl:text-6xl bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text animate-pulse"
       >
         Assistant Professor
       </p>
@@ -38,7 +43,7 @@ export default {
         <a
           href="https://www.gzhu.edu.cn/"
           target="_blank"
-          class="libre-franklin text-sm xl:text-base 2xl:text-xl bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text animate-pulse"
+          class="libre-franklin text-sm xl:text-[15px] 3xl:text-[22px] 5xl:text-[30px] 6xl:text-[45px] bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text animate-pulse"
           ><equal></equal>Guangzhou University<equal></equal
         ></a>
       </p>
@@ -46,7 +51,7 @@ export default {
 
     <!-- options -->
     <div
-      class="flex flex-col justify-center items-start space-y-1 xl:space-y-2 2xl:space-y-4"
+      class="flex flex-col justify-center items-start text-sm xl:text-[15px] 3xl:text-[22px] 5xl:text-[30px] 6xl:text-[45px] space-y-1 3xl:space-y-3 5xl:space-y-6 6xl:space-y-12"
     >
       <!-- Google Scholar -->
       <a
@@ -55,7 +60,7 @@ export default {
         class="text-gray-600 hover:text-[#333] transition-all duration-300 transform hover:scale-110 flex items-center justify-center hover:no-underline"
       >
         <svg
-          class="w-8 h-8 mr-2"
+          class="w-8 h-8 mr-2 3xl:w-8 3xl:h-8 3xl:mr-2 5xl:w-10 5xl:h-10 5xl:mr-3 6xl:w-12 6xl:h-12 6xl:mr-4"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
         >
@@ -67,9 +72,7 @@ export default {
             d="M121.037 298.667c23.968-50.453 75.392-85.334 134.963-85.334s110.995 34.881 134.963 85.334H121.037z"
           />
         </svg>
-        <span class="text-[#4285f4] nunito text-sm xl:text-base 2xl:text-xl"
-          >Google Scholar</span
-        >
+        <span class="text-[#4285f4] nunito">Google Scholar</span>
       </a>
 
       <!-- openreview -->
@@ -80,7 +83,7 @@ export default {
       >
         <svg
           t="1736946772680"
-          class="w-7 h-7 mr-[10px] ml-[2px]"
+          class="w-8 h-8 mr-2 3xl:w-8 3xl:h-8 3xl:mr-2 5xl:w-10 5xl:h-10 5xl:mr-3 6xl:w-12 6xl:h-12 6xl:mr-4"
           viewBox="0 0 1033 1024"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -102,9 +105,7 @@ export default {
             p-id="6663"
           ></path>
         </svg>
-        <span class="text-[#8C1B13] nunito text-sm xl:text-base 2xl:text-xl"
-          >OpenReview</span
-        >
+        <span class="text-[#8C1B13] nunito">OpenReview</span>
       </a>
 
       <!-- Github -->
@@ -114,7 +115,7 @@ export default {
         class="text-gray-900 hover:text-[#333] transition-all duration-300 transform hover:scale-110 flex items-center justify-center hover:no-underline"
       >
         <svg
-          class="w-8 h-8 mr-2"
+          class="w-8 h-8 mr-2 3xl:w-8 3xl:h-8 3xl:mr-2 5xl:w-10 5xl:h-10 5xl:mr-3 6xl:w-12 6xl:h-12 6xl:mr-4"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -123,9 +124,7 @@ export default {
             fill="#333"
           />
         </svg>
-        <span class="nunito text-gray-900 text-sm xl:text-base 2xl:text-xl"
-          >Github</span
-        >
+        <span class="nunito text-gray-900">Github</span>
       </a>
     </div>
 
@@ -133,11 +132,11 @@ export default {
     <div class="flex justify-center items-center">
       <a
         href="mailto:linxin94@gzhu.edu.cn"
-        class="flex justify-center items-center nunito text-sm xl:text-base 2xl:text-xl relative inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full hover:shadow-xl hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 focus:ring-blue-300 font-medium hover:no-underline"
+        class="flex justify-center items-center nunito text-sm xl:text-[15px] 3xl:text-[22px] 5xl:text-[30px] 6xl:text-[45px] relative inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-1 3xl:py-3 3xl:px-6 5xl:py-5 5xl:px-8 6xl:py-8 6xl:px-12 rounded-full hover:shadow-xl hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 focus:ring-blue-300 font-medium hover:no-underline"
       >
         <svg
           t="1737030596535"
-          class="icon w-5 h-5 mb-1 mr-1 mt-[1px]"
+          class="icon w-5 h-5 mb-1 mr-1 mt-[1px] 3xl:w-8 3xl:h-8 3xl:mr-2 5xl:w-10 5xl:h-10 5xl:mr-3 6xl:w-12 6xl:h-12 6xl:mr-4"
           viewBox="0 0 1024 1024"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -151,27 +150,6 @@ export default {
         </svg>
         Email : linxin94@gzhu.edu.cn
       </a>
-
-      <!-- <a
-        href="mailto:linxin94@gzhu.edu.cn"
-        class="nunito text-[#5967F2] mr-2 ml-4 text-lg 2xl:text-xl hover:text-black hover:no-underline inline-flex items-center transition-all duration-300 group"
-      >
-        Email: linxin94@gzhu.edu.cn
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M5 19l14-14m0 0v11m0-11h-11"
-          />
-        </svg>
-      </a> -->
     </div>
   </div>
 </template>

@@ -6,15 +6,10 @@ export default {
   //theme 对象用于自定义Tailwind的主题，包括颜色、字体、间距等。
   theme: {
     extend: {
-      fontFamily: {
-        //给sans添加了新的字体定义,如果Poppins不可用，则使用系统默认的sans-serif字体
-        //使用类名 font-sans，就会应用这个新的字体配置
-        sans: ["Poppins", "sans-serif"],
-      },
-      gridTemplateColumns: {
-        //新增名为70/30的布局，第一列占70%，第二列占28%
-        //使用类名 grid-cols-70/30，就可以应用到这个布局
-        "70/30": "70% 28%",
+      screens: {
+        "3xl": "1920px",
+        "5xl": "2560px",
+        "6xl": "3840px",
       },
       animation: {
         pulseSlow: "pulse 3s ease-in-out infinite", // 修改为3秒

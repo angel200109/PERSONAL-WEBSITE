@@ -262,7 +262,11 @@ export default {
   >
     <!-- 左部分 -->
     <div class="LeftBlock" ref="LeftBlock">
-      <LeftPart />
+      <LeftPart
+        largeFont="var(--largeFont)"
+        smallFont="var(--smallFont)"
+        :screenWidth="screenWidth"
+      />
     </div>
 
     <!-- 右部分 -->
@@ -295,7 +299,7 @@ export default {
         </div>
 
         <div id="footer" class="text-center mt-3">
-          <small>Updated Jan 1, 2025</small>
+          <small>Updated Jan 17, 2025</small>
         </div>
       </div>
     </div>
