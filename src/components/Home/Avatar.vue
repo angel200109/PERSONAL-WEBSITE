@@ -36,12 +36,13 @@ export default {
 <style scoped>
 .Avatar {
   background-position: center;
-  border: 2px solid lightgray;
+  /* border: 2px solid lightgray; */
   /* box-shadow: 2px 2px 2px  gray; */
   border-radius: var(--border-radius);
   transition: border-radius 1s;
   background-size: 100%;
   border-radius: 50%;
+  @apply rounded-full object-cover shadow-lg hover:scale-105 transition duration-300;
 }
 
 /* .Avatar:hover {

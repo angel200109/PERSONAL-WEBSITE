@@ -2,7 +2,7 @@
 import authorConfig from "../../config/author.config";
 
 export default {
-  props: ["largeFont", "smallFont", "screenWidth"],
+  props: ["largeFont", "middleFont", "smallFont", "screenWidth"],
 
   components: {},
 
@@ -43,7 +43,8 @@ export default {
 <template>
   <div class="CoAuthor">
     <h2
-      class="catamaran text-3xl sm:text-4xl 2xl:text-[40px] font-extrabold text-center mb-5 mt-2 text-gray-700"
+      class="catamaran font-extrabold text-center mb-5 mt-2 text-gray-700"
+      :style="`font-size:` + this.largeFont"
     >
       🤗 Co-Authors
     </h2>
@@ -63,6 +64,7 @@ export default {
           <div class="count">
             {{ number[name] }}
           </div>
+
           <div class="head">
             <img
               :src="`./imgs/co-authors/Default.png`"
@@ -70,7 +72,11 @@ export default {
             />
             <img :src="author.image" v-else />
           </div>
-          <div class="pt-1 text-center text-base 2xl:text-2xl 2xl:pt-2">
+
+          <div
+            class="pt-1 text-center 2xl:pt-2 pb-1 2xl:pb-2"
+            :style="`font-size:` + this.middleFont"
+          >
             <span>
               <a
                 :href="author.url"
@@ -79,14 +85,18 @@ export default {
               >
             </span>
           </div>
+
           <div
-            class="position text-m 2xl:text-[23px] mb-1 2xl:pt-1"
+            class="position mb-1 2xl:pt-1"
             style="text-align: center"
+            :style="`font-size:` + this.smallFont"
           >
             <span> {{ author.position }} </span>
           </div>
+
           <div
-            class="institute text-xs 2xl:text-[18px] leading-[1.2] text-gray-700"
+            class="institute leading-[1.2] text-gray-700"
+            :style="`font-size:` + this.smallFont"
           >
             <span>
               {{ author.institute }}

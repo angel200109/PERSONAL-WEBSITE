@@ -3,7 +3,7 @@ import authorConfig from "../../config/author.config";
 import Me from "../icons/Me.vue";
 
 export default {
-  props: ["largeFont", "smallFont"],
+  props: ["largeFont", "middleFont", "smallFont"],
 
   components: {
     Me,
@@ -23,12 +23,14 @@ export default {
       <!-- About Me -->
       <div>
         <h2
-          class="catamaran text-3xl sm:text-4xl 2xl:text-[40px] font-extrabold text-center mb-6 2xl:mb-8 text-gray-700"
+          class="catamaran font-extrabold text-center mb-6 2xl:mb-8 text-gray-700"
+          :style="`font-size:` + this.largeFont"
         >
           👨🏻‍💻 About Me
         </h2>
         <p
-          class="text-center mb-11 2xl:mb-14 text-gray-500 text-base 2xl:text-2xl"
+          class="text-center mb-11 2xl:mb-14 text-gray-500"
+          :style="`font-size:` + this.smallFont"
         >
           I am an Assistant Professor at the School of Artificial Intelligence,
           <a
@@ -98,55 +100,55 @@ export default {
           class="bg-gray-100 rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:shadow-gray-500/50 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
         >
           <h3
-            class="catamaran text-xl 2xl:text-3xl font-bold mb-2 text-gray-700"
+            class="catamaran font-bold mb-2 text-gray-700"
+            :style="`font-size:` + this.middleFont"
           >
             🎓 Education Background
           </h3>
-          <div class="flex items-center justify-between flex-wrap">
+          <div
+            class="flex items-center justify-between flex-wrap"
+            :style="`font-size:` + this.smallFont"
+          >
             <div class="mb-1">
-              <p
-                class="text-l 2xl:text-2xl font-medium text-gray-600 font-semibold"
-              >
+              <p class="font-medium text-gray-600 font-semibold">
                 • Ph.D degree: Sep. 2018 - Oct. 2022
               </p>
-              <p class="text-l 2xl:text-2xl text-gray-600 hover:text-blue-500">
+              <p class="text-gray-600 hover:text-blue-500">
                 School of Electronic and Information Engineering, South China
                 University of Technology (SCUT), Guangzhou, China
               </p>
-              <p
-                class="text-l 2xl:text-2xl font-medium text-gray-400 hover:text-[#6F52EE]"
-              >
+              <p class="font-medium text-gray-400 hover:text-[#6F52EE]">
                 Supervisor: Prof. Dacheng Tao (IEEE Fellow) and Prof. Changxing
                 Ding
               </p>
             </div>
           </div>
-          <div class="flex items-center justify-between flex-wrap">
+          <div
+            class="flex items-center justify-between flex-wrap"
+            :style="`font-size:` + this.smallFont"
+          >
             <div class="mb-1">
-              <p
-                class="text-l 2xl:text-2xl font-medium text-gray-600 font-semibold"
-              >
+              <p class="font-medium text-gray-600 font-semibold">
                 • M.S degree: Sept. 2015 -Jul. 2018
               </p>
-              <p class="text-l 2xl:text-2xl text-gray-600 hover:text-blue-500">
+              <p class="text-gray-600 hover:text-blue-500">
                 College of Electronic and Information Engineering, Shenzhen
                 University (SZU), Shenzhen, China
               </p>
-              <p
-                class="text-l 2xl:text-2xl font-medium text-gray-400 hover:text-[#6F52EE]"
-              >
+              <p class="font-medium text-gray-400 hover:text-[#6F52EE]">
                 Supervisor: Prof. Lei Huang
               </p>
             </div>
           </div>
-          <div class="flex items-center justify-between flex-wrap">
+          <div
+            class="flex items-center justify-between flex-wrap"
+            :style="`font-size:` + this.smallFont"
+          >
             <div>
-              <p
-                class="text-l 2xl:text-2xl font-medium text-gray-600 font-semibold"
-              >
+              <p class="font-medium text-gray-600 font-semibold">
                 • B.E degree: Sept. 2010 - Jul. 2014
               </p>
-              <p class="text-l 2xl:text-2xl text-gray-600 hover:text-blue-500">
+              <p class="text-gray-600 hover:text-blue-500">
                 School of Computer Science and Cyber Engineering, Guangzhou
                 University (GZU), Guangzhou, China
               </p>
@@ -158,11 +160,15 @@ export default {
           class="bg-gray-100 rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:shadow-gray-500/50 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
         >
           <h3
-            class="catamaran text-xl 2xl:text-3xl font-bold mb-2 text-gray-700"
+            class="catamaran font-bold mb-2 text-gray-700"
+            :style="`font-size:` + this.middleFont"
           >
             📑 Academic Services
           </h3>
-          <div class="flex items-center justify-between flex-wrap">
+          <div
+            class="flex items-center justify-between flex-wrap"
+            :style="`font-size:` + this.smallFont"
+          >
             <div class="mb-1">
               <p
                 class="text-l 2xl:text-2xl font-medium text-gray-600 font-semibold"
@@ -174,7 +180,10 @@ export default {
               </p>
             </div>
           </div>
-          <div class="flex items-center justify-between flex-wrap">
+          <div
+            class="flex items-center justify-between flex-wrap"
+            :style="`font-size:` + this.smallFont"
+          >
             <div>
               <p
                 class="text-l 2xl:text-2xl font-medium text-gray-600 font-semibold"

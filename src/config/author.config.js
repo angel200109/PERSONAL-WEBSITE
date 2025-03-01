@@ -1,6 +1,6 @@
 export default {
   name: "Lin Xin",
-  avatar_pic: "./imgs/LinXi.webp",
+  avatar_pic: "./imgs/LinXin.jpeg",
   role: "Assistant Professor",
   school: {
     name: "Guangzhou University",
@@ -60,106 +60,90 @@ export default {
     "Weakly Supervised Learning",
   ],
 
-  // 论文卡片
+  // 改论文卡片
   publications: {
-    2020: [
+    2025: [
       {
-        image: "./imgs/2020_GPS-Net.png",
+        image: "./imgs/2025_DistractionIsAllYouNeed.png",
         title:
-          "GPS-Net: Graph Property Sensing Network for Scene Graph Generation",
-        author: "<b>Xin Lin</b>, Changxing Ding, Jinquan Zeng, Dacheng Tao ",
+          "Distraction is All You Need for Multimodal Large Language Model Jailbreaking",
+        author:
+          "Zuopeng Yang, Jiluan Fan, Anli Yan, Erdun Gao, <b>Xin Lin</b>, Tao Li, Kanghua mo, Changyu Dong",
         publisher:
-          "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2020 (Oral presentation)",
+          "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025", //检查
         keywords: [
           "Scene Graph Generation",
           "Message Passing",
           "Visual Relationship Detection",
-        ],
-        citations: "291",
-        searchCitations:
-          "https://scholar.google.com/scholar?cites=6322890861074553647&as_sdt=2005&sciodt=0,5&hl=en",
+        ], //改
+        citations: "0",
+        searchCitations: "",
         options: {
-          PDF: "https://arxiv.org/abs/2003.12962",
-          Bibtex: "./bibtexs/2020_GPS-Net.bib",
-          Code: "https://github.com/siml3/GPS-Net",
+          PDF: "https://arxiv.org/abs/2502.10794",
+          Bibtex: "/404", //还没改
+          //Code: "",
         },
-        paper_url: "https://arxiv.org/abs/2003.12962",
+        paper_url: "https://arxiv.org/abs/2502.10794",
         new: true,
       },
-    ],
-    2022: [
       {
-        image: "./imgs/2022_RU-Net.png",
+        image: "./imgs/2025_SGG-Net.png",
         title:
-          "RU-Net: Regularized Unrolling Network for Scene Graph Generation",
+          "SGC-Net: Stratified Granular Comparison Network for Open-Vocabulary HOI Detection",
         author:
-          "<b>Xin Lin</b>, Changxing Ding, Jing Zhang, Yibing Zhan, Dacheng Tao",
+          "<b>Xin Lin</b>, Chong Shi, Zuopeng Yang, Haojin Tang, Zhili Zhou",
         publisher:
-          "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022  ",
+          "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2025", //检查
         keywords: [
           "Scene Graph Generation",
-          "Algorithm Unrolling",
+          "Message Passing",
           "Visual Relationship Detection",
-        ],
-        citations: "47",
-        searchCitations:
-          "https://scholar.google.com/scholar?cites=3765664053223640870&as_sdt=2005&sciodt=0,5&hl=en",
+        ], //改
+        citations: "0",
+        searchCitations: "",
         options: {
-          PDF: "https://arxiv.org/abs/2205.01297",
-          Bibtex: "./bibtexs/2022_RU-Net.bib",
-          Code: "https://github.com/siml3/ru-net",
+          PDF: "./pdf/SGC_Net__Stratified_Granular_Comparison_Network_for_Open_Vocabulary_HOI_Detection_CVPR_2025.pdf",
+          Bibtex: "/404", //还没改
+          //Code: "",
         },
-        paper_url: "https://arxiv.org/abs/2205.01297",
+        paper_url:
+          "./pdf/SGC_Net__Stratified_Granular_Comparison_Network_for_Open_Vocabulary_HOI_Detection_CVPR_2025.pdf",
         new: true,
       },
       {
-        image: "./imgs/2022_HL-Net.png",
+        image: "./imgs/2025_Few-Shot_Hyperspectral.png",
         title:
-          "HL-Net: Heterophily Learning Network for Scene Graph Generation",
+          "Few-Shot Hyperspectral Image Classification With Deep Fuzzy Metric Learning",
         author:
-          "<b>Xin Lin</b>, Changxing Ding, Yibing Zhan, Zijian Li, Dacheng Tao",
+          "Haojin Tang, Chao Zhang, Dong Tang, <b>Xin Lin</b>, Xiaofei Yang, Weixin Xie",
         publisher:
-          "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022 ",
-        keywords: [
-          "Scene Graph Generation",
-          "Heterophily Learning",
-          "Visual Relationship Detection",
-        ],
-        citations: "58",
-        searchCitations:
-          "https://scholar.google.com/scholar?cites=6746926126987228342&as_sdt=2005&sciodt=0,5&hl=en",
+          "IEEE Geoscience and Remote Sensing Letters(<b>GRSL</b>), 2025",
+        keywords: ["1", "2", "3"], //改
+        citations: "0",
+        searchCitations: "",
         options: {
-          PDF: "https://arxiv.org/abs/2205.01316",
-          Bibtex: "./bibtexs/2022_HL-Net.bib",
-          Code: "https://github.com/siml3/hl-net",
+          PDF: "https://ieeexplore.ieee.org/abstract/document/10891053",
+          Bibtex: "./bibtexs/2025_Few-Shot.bib",
+          //Code: "",
         },
-        paper_url: "https://arxiv.org/abs/2205.01316",
+        paper_url: "https://ieeexplore.ieee.org/abstract/document/10891053",
         new: true,
       },
-    ],
-    2023: [
       {
-        image: "./imgs/2023_Eliminating.png",
+        image: "./imgs/2025_MitigatingMissingFeatureChannels.png",
         title:
-          "Eliminating Contextual Prior Bias for Semantic Image Editing via Dual-Cycle Diffusion",
-        author:
-          "Zuopeng Yang, Tianshu Chu, <b>Xin Lin</b>, Erdun Gao, Daqing Liu, Jie Yang, and Chaoyue Wang",
-        publisher:
-          "IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>),2023",
-        keywords: [
-          "Contextual prior bias",
-          "semantic image editing",
-          "Dual-Cycle Diffusion",
-        ],
-        citations: "12",
-        searchCitations:
-          "https://scholar.google.com/scholar?cites=4135658823311622212&as_sdt=2005&sciodt=0,5&hl=en",
+          "Mitigating Missing Feature Channels at Inference Stage: Test-Time Adaptation through Self-Training with Data Imputation",
+        author: "Yan Huang, Yongyi Su, Xulei Yang, <b>Xin Lin</b>, Xun Xu",
+        publisher: "IEEE Signal Processing Letters(<b>SPL</b>), 2025",
+        keywords: ["1", "2", "3"], //改
+        citations: "0",
+        searchCitations: "",
         options: {
-          PDF: "https://arxiv.org/abs/2302.02394",
-          Bibtex: "./bibtexs/2023_Eliminating.bib",
-          Code: "https://github.com/johndreamer/dualcyclediffsion",
+          PDF: "https://ieeexplore.ieee.org/abstract/document/10891023",
+          Bibtex: "./bibtexs/2025_Mitigating Missing Feature Channels.bib",
+          //Code: "",
         },
-        paper_url: "https://arxiv.org/abs/2302.02394",
+        paper_url: "https://ieeexplore.ieee.org/abstract/document/10891023",
         new: true,
       },
     ],
@@ -184,9 +168,111 @@ export default {
           Bibtex: "./bibtexs/2024_TD2.bib",
         },
         paper_url: "https://arxiv.org/abs/2401.12479",
-        new: true,
+        new: false,
       },
     ],
+    2023: [
+      {
+        image: "./imgs/2023_Eliminating.png",
+        title:
+          "Eliminating Contextual Prior Bias for Semantic Image Editing via Dual-Cycle Diffusion",
+        author:
+          "Zuopeng Yang, Tianshu Chu, <b>Xin Lin</b>, Erdun Gao, Daqing Liu, Jie Yang, and Chaoyue Wang",
+        publisher:
+          "IEEE Transactions on Circuits and Systems for Video Technology (<b>TCSVT</b>),2023",
+        keywords: [
+          "Contextual prior bias",
+          "semantic image editing",
+          "Dual-Cycle Diffusion",
+        ],
+        citations: "18",
+        searchCitations:
+          "https://scholar.google.com/scholar?cites=4135658823311622212&as_sdt=2005&sciodt=0,5&hl=en",
+        options: {
+          PDF: "https://arxiv.org/abs/2302.02394",
+          Bibtex: "./bibtexs/2023_Eliminating.bib",
+          Code: "https://github.com/johndreamer/dualcyclediffsion",
+        },
+        paper_url: "https://arxiv.org/abs/2302.02394",
+        new: false,
+      },
+    ],
+    2022: [
+      {
+        image: "./imgs/2022_RU-Net.png",
+        title:
+          "RU-Net: Regularized Unrolling Network for Scene Graph Generation",
+        author:
+          "<b>Xin Lin</b>, Changxing Ding, Jing Zhang, Yibing Zhan, Dacheng Tao",
+        publisher:
+          "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022  ",
+        keywords: [
+          "Scene Graph Generation",
+          "Algorithm Unrolling",
+          "Visual Relationship Detection",
+        ],
+        citations: "49",
+        searchCitations:
+          "https://scholar.google.com/scholar?cites=3765664053223640870&as_sdt=2005&sciodt=0,5&hl=en",
+        options: {
+          PDF: "https://arxiv.org/abs/2205.01297",
+          Bibtex: "./bibtexs/2022_RU-Net.bib",
+          Code: "https://github.com/siml3/ru-net",
+        },
+        paper_url: "https://arxiv.org/abs/2205.01297",
+        new: true,
+      },
+      {
+        image: "./imgs/2022_HL-Net.png",
+        title:
+          "HL-Net: Heterophily Learning Network for Scene Graph Generation",
+        author:
+          "<b>Xin Lin</b>, Changxing Ding, Yibing Zhan, Zijian Li, Dacheng Tao",
+        publisher:
+          "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022 ",
+        keywords: [
+          "Scene Graph Generation",
+          "Heterophily Learning",
+          "Visual Relationship Detection",
+        ],
+        citations: "59",
+        searchCitations:
+          "https://scholar.google.com/scholar?cites=6746926126987228342&as_sdt=2005&sciodt=0,5&hl=en",
+        options: {
+          PDF: "https://arxiv.org/abs/2205.01316",
+          Bibtex: "./bibtexs/2022_HL-Net.bib",
+          Code: "https://github.com/siml3/hl-net",
+        },
+        paper_url: "https://arxiv.org/abs/2205.01316",
+        new: false,
+      },
+    ],
+    2020: [
+      {
+        image: "./imgs/2020_GPS-Net.png",
+        title:
+          "GPS-Net: Graph Property Sensing Network for Scene Graph Generation",
+        author: "<b>Xin Lin</b>, Changxing Ding, Jinquan Zeng, Dacheng Tao ",
+        publisher:
+          "IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2020 (Oral presentation)",
+        keywords: [
+          "Scene Graph Generation",
+          "Message Passing",
+          "Visual Relationship Detection",
+        ],
+        citations: "294",
+        searchCitations:
+          "https://scholar.google.com/scholar?cites=6322890861074553647&as_sdt=2005&sciodt=0,5&hl=en",
+        options: {
+          PDF: "https://arxiv.org/abs/2003.12962",
+          Bibtex: "./bibtexs/2020_GPS-Net.bib",
+          Code: "https://github.com/siml3/GPS-Net",
+        },
+        paper_url: "https://arxiv.org/abs/2003.12962",
+        new: false,
+      },
+    ],
+
     // 2022: [
     //   {
     //     image: "./imgs/2022_SuEtAl_TTAC.webp",

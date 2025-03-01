@@ -241,7 +241,8 @@ export default {
   <div class="Publications">
     <!-- title -->
     <h2
-      class="catamaran text-3xl sm:text-4xl 2xl:text-[40px] font-extrabold text-center mb-3 text-gray-700 mt-12"
+      class="catamaran font-extrabold text-center mb-3 text-gray-700 mt-12"
+      :style="`font-size:` + this.largeFont"
     >
       🏆Selected Publications
     </h2>

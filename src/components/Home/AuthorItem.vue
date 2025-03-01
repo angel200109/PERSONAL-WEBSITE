@@ -9,12 +9,16 @@ export default {
       type: String,
       default: "normal",
     },
+    margin_top: {
+      type: String,
+      default: "18px",
+    },
   },
 };
 </script>
 
 <template>
-  <div class="Item" ref="Item">
+  <div class="Item" ref="Item" :style="`margin-top:` + this.margin_top">
     <div
       class="Icon"
       :style="`width:` + this.font_size + '; height:' + this.font_size"
@@ -24,6 +28,7 @@ export default {
         <slot name="Icon"></slot>
       </span>
     </div>
+
     <span
       class="Text"
       :style="
@@ -39,7 +44,7 @@ export default {
 .Item {
   width: 100%;
   text-align: left;
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
