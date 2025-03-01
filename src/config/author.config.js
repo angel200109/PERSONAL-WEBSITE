@@ -64,7 +64,7 @@ export default {
   publications: {
     2025: [
       {
-        image: "./imgs/2025_DistractionIsAllYouNeed.png",
+        image: "./imgs/paper-cover/2025_DistractionIsAllYouNeed.webp",
         title:
           "Distraction is All You Need for Multimodal Large Language Model Jailbreaking",
         author:
@@ -87,7 +87,7 @@ export default {
         new: true,
       },
       {
-        image: "./imgs/2025_SGG-Net.png",
+        image: "./imgs/paper-cover/2025_SGC-Net.webp",
         title:
           "SGC-Net: Stratified Granular Comparison Network for Open-Vocabulary HOI Detection",
         author:
@@ -111,7 +111,7 @@ export default {
         new: true,
       },
       {
-        image: "./imgs/2025_Few-Shot_Hyperspectral.png",
+        image: "./imgs/paper-cover/2025_Few-Shot_Hyperspectral.webp",
         title:
           "Few-Shot Hyperspectral Image Classification With Deep Fuzzy Metric Learning",
         author:
@@ -123,14 +123,14 @@ export default {
         searchCitations: "",
         options: {
           PDF: "https://ieeexplore.ieee.org/abstract/document/10891053",
-          Bibtex: "./bibtexs/2025_Few-Shot.bib",
+          Bibtex: "./bibtexs/2025_Few-Shot_Hyperspectral.bib",
           //Code: "",
         },
         paper_url: "https://ieeexplore.ieee.org/abstract/document/10891053",
         new: true,
       },
       {
-        image: "./imgs/2025_MitigatingMissingFeatureChannels.png",
+        image: "./imgs/paper-cover/2025_MitigatingMissingFeatureChannels.webp",
         title:
           "Mitigating Missing Feature Channels at Inference Stage: Test-Time Adaptation through Self-Training with Data Imputation",
         author: "Yan Huang, Yongyi Su, Xulei Yang, <b>Xin Lin</b>, Xun Xu",
@@ -140,7 +140,7 @@ export default {
         searchCitations: "",
         options: {
           PDF: "https://ieeexplore.ieee.org/abstract/document/10891023",
-          Bibtex: "./bibtexs/2025_Mitigating Missing Feature Channels.bib",
+          Bibtex: "./bibtexs/2025_MitigatingMissingFeatureChannels.bib",
           //Code: "",
         },
         paper_url: "https://ieeexplore.ieee.org/abstract/document/10891023",
@@ -149,7 +149,7 @@ export default {
     ],
     2024: [
       {
-        image: "./imgs/2024_TD2.png",
+        image: "./imgs/paper-cover/2024_TD2.webp",
         title:
           "TD<sup>2</sup> -Net: Toward Denoising and Debiasing for Dynamic Scene Graph Generation",
         author:
@@ -173,7 +173,7 @@ export default {
     ],
     2023: [
       {
-        image: "./imgs/2023_Eliminating.png",
+        image: "./imgs/paper-cover/2023_Eliminating.webp",
         title:
           "Eliminating Contextual Prior Bias for Semantic Image Editing via Dual-Cycle Diffusion",
         author:
@@ -199,7 +199,7 @@ export default {
     ],
     2022: [
       {
-        image: "./imgs/2022_RU-Net.png",
+        image: "./imgs/paper-cover/2022_RU-Net.webp",
         title:
           "RU-Net: Regularized Unrolling Network for Scene Graph Generation",
         author:
@@ -223,7 +223,7 @@ export default {
         new: true,
       },
       {
-        image: "./imgs/2022_HL-Net.png",
+        image: "./imgs/paper-cover/2022_HL-Net.webp",
         title:
           "HL-Net: Heterophily Learning Network for Scene Graph Generation",
         author:
@@ -249,7 +249,7 @@ export default {
     ],
     2020: [
       {
-        image: "./imgs/2020_GPS-Net.png",
+        image: "./imgs/paper-cover/2020_GPS-Net.webp",
         title:
           "GPS-Net: Graph Property Sensing Network for Scene Graph Generation",
         author: "<b>Xin Lin</b>, Changxing Ding, Jinquan Zeng, Dacheng Tao ",

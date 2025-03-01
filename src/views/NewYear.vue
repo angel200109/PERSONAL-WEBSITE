@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <audio autoplay controls loop id="music" style="display: none">
-      <source :src="'./music/happy_2024.mp3'" type="audio/mpeg" />
+      <source type="audio/mpeg" />
     </audio>
     <div class="sky" ref="sky"></div>
 
