@@ -4,6 +4,7 @@ import apiConfig from "../config/api.config";
 import Next from "../components/icons/Next.vue";
 import AuthorItem from "../components/Home/AuthorItem.vue";
 import AboutMe from "../components/Home/AboutMe.vue";
+import BackgroundAndServices from "../components/Home/BackgroundAndServices.vue";
 import CoAuthor from "../components/Home/CoAuthor.vue";
 import News from "../components/Home/News.vue";
 import Publication from "../components/Home/Publication.vue";
@@ -22,6 +23,7 @@ export default {
     Avatar,
     AuthorItem,
     AboutMe,
+    BackgroundAndServices,
     SmName,
     Name,
     CoAuthor,
@@ -424,7 +426,7 @@ export default {
         <template v-slot:Text>
           <a
             href="mailto:linxin94@gzhu.edu.cn"
-            class="flex justify-center items-center nunito relative inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-1 5xl:py-2 rounded-full hover:shadow-xl hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 focus:ring-blue-300 font-medium hover:no-underline"
+            class="flex justify-center items-center nunito relative bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-1 5xl:py-2 rounded-full hover:shadow-xl hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 focus:ring-blue-300 font-medium hover:no-underline"
           >
             <svg
               t="1737030596535"
@@ -449,15 +451,30 @@ export default {
     <!-- 右部分 -->
     <div class="RightBlock" ref="RightBlock">
       <div class="RightContent">
+        <!-- largeFont是标题 -->
         <!-- Aboutme and BackGround -->
         <div class="BlockItem">
           <AboutMe
+            largeFont="calc(var(--largeFont)*1.3)"
+            middleFont="calc(var(--smallFont)*1.5)"
+            smallFont="calc(var(--smallFont)*1.05)"
+          />
+        </div>
+        <div class="BlockItem newHeight" style="margin-top: 30px">
+          <News
+            largeFont="calc(var(--largeFont)*1.3)"
+            smallFont="var(--smallFont)"
+            :screenWidth="screenWidth"
+          />
+        </div>
+
+        <div class="BlockItem">
+          <BackgroundAndServices
             largeFont="calc(var(--largeFont)*1.6)"
             middleFont="calc(var(--smallFont)*1.5)"
             smallFont="calc(var(--smallFont)*1.05)"
           />
         </div>
-
         <!-- Publication -->
         <div class="BlockItem" style="margin-top: 25px">
           <Publication
@@ -480,8 +497,9 @@ export default {
           />
         </div>
 
+        <!-- 改日期 -->
         <div id="footer" class="text-center mt-3">
-          <small>Updated Jan 22, 2025</small>
+          <small>Updated Sep 14, 2025</small>
         </div>
       </div>
     </div>
@@ -692,6 +710,28 @@ export default {
 
 #footer {
   text-align: right;
+}
+@media (max-width: 600px) {
+  .newHeight {
+    height: 190px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .newHeight {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .newHeight {
+    height: 200px;
+  }
+}
+@media (min-width: 2048px) {
+  .newHeight {
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 768px) {

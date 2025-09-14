@@ -17,6 +17,7 @@ export default {
     isPC() {
       return this.screenWidth >= 800;
     },
+
     duplicatedSkills() {
       return [...this.skills, ...this.skills, ...this.skills]; // Triple the skills for smoother looping
     },
@@ -80,6 +81,7 @@ export default {
             <span>
               <a
                 :href="author.url"
+                target="_blank"
                 class="text-[#4285f4] hover:transition-all duration-300 transform hover:scale-110 flex items-center justify-center hover:no-underline"
                 ><b>{{ name }}</b></a
               >

@@ -246,11 +246,11 @@ export default {
     >
       🏆Selected Publications
     </h2>
-    <!-- <h6
-      class="text-l sm:text-m 2xl:text-base font-extrabold text-center mb-3 text-gray-700"
+    <h6
+      class="text-l sm:text-[17px] 2xl:text-[28px] font-extrabold text-center mb-3 text-gray-700"
     >
-      <equal></equal> denotes `Equal Contribution`.
-    </h6> -->
+      <equal></equal> denotes `Corresponding Author`.
+    </h6>
     <!-- <div class="title unselect">
       <div
         class="icon"

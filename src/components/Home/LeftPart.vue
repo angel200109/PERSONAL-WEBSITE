@@ -18,7 +18,7 @@ export default {
     <!-- img -->
 
     <img
-      src="../../../public/imgs/LinXin.jpeg"
+      src="../../../public/imgs/LinXin.webp"
       style="width: 70%; height: auto; aspect-ratio: 1; object-fit: cover"
       alt="Professional headshot of the software engineer"
       class="flex rounded-full object-cover shadow-lg hover:scale-105 transition duration-300"

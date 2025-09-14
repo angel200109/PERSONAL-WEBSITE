@@ -18,20 +18,17 @@ export default {
 </script>
 
 <template>
-  <section id="about" class="flex items-center justify-center pt-3 2xl:pt-8">
-    <div class="m-0 px-2 sm:px-6 lg:px-8">
+  <section id="about" class="flex items-center justify-center">
+    <div class="m-0">
       <!-- About Me -->
       <div>
         <h2
-          class="catamaran font-extrabold text-center mb-6 2xl:mb-8 text-gray-700"
+          class="catamaran font-extrabold text-center mb-3 2xl:mb-4 text-gray-700"
           :style="`font-size:` + this.largeFont"
         >
           👨🏻‍💻 About Me
         </h2>
-        <p
-          class="text-center mb-11 2xl:mb-14 text-gray-500"
-          :style="`font-size:` + this.smallFont"
-        >
+        <p class="text-gray-700" :style="`font-size:` + this.smallFont">
           I am an Assistant Professor at the School of Artificial Intelligence,
           <a
             href="https://www.gzhu.edu.cn/"
@@ -92,111 +89,6 @@ export default {
           >, <b style="color: #55f722"> visual relationship detection</b>, and
           <b style="color: #5522f7"> multimodal LLMs</b>.
         </p>
-      </div>
-
-      <!-- Education and academic service -->
-      <div class="space-y-8 2xl:space-y-10">
-        <div
-          class="bg-gray-100 rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:shadow-gray-500/50 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
-        >
-          <h3
-            class="catamaran font-bold mb-2 text-gray-700"
-            :style="`font-size:` + this.middleFont"
-          >
-            🎓 Education Background
-          </h3>
-          <div
-            class="flex items-center justify-between flex-wrap"
-            :style="`font-size:` + this.smallFont"
-          >
-            <div class="mb-1">
-              <p class="font-medium text-gray-600 font-semibold">
-                • Ph.D degree: Sep. 2018 - Oct. 2022
-              </p>
-              <p class="text-gray-600 hover:text-blue-500">
-                School of Electronic and Information Engineering, South China
-                University of Technology (SCUT), Guangzhou, China
-              </p>
-              <p class="font-medium text-gray-400 hover:text-[#6F52EE]">
-                Supervisor: Prof. Dacheng Tao (IEEE Fellow) and Prof. Changxing
-                Ding
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between flex-wrap"
-            :style="`font-size:` + this.smallFont"
-          >
-            <div class="mb-1">
-              <p class="font-medium text-gray-600 font-semibold">
-                • M.S degree: Sept. 2015 -Jul. 2018
-              </p>
-              <p class="text-gray-600 hover:text-blue-500">
-                College of Electronic and Information Engineering, Shenzhen
-                University (SZU), Shenzhen, China
-              </p>
-              <p class="font-medium text-gray-400 hover:text-[#6F52EE]">
-                Supervisor: Prof. Lei Huang
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between flex-wrap"
-            :style="`font-size:` + this.smallFont"
-          >
-            <div>
-              <p class="font-medium text-gray-600 font-semibold">
-                • B.E degree: Sept. 2010 - Jul. 2014
-              </p>
-              <p class="text-gray-600 hover:text-blue-500">
-                School of Computer Science and Cyber Engineering, Guangzhou
-                University (GZU), Guangzhou, China
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="bg-gray-100 rounded-2xl p-6 shadow-xl hover:shadow-2xl hover:shadow-gray-500/50 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105"
-        >
-          <h3
-            class="catamaran font-bold mb-2 text-gray-700"
-            :style="`font-size:` + this.middleFont"
-          >
-            📑 Academic Services
-          </h3>
-          <div
-            class="flex items-center justify-between flex-wrap"
-            :style="`font-size:` + this.smallFont"
-          >
-            <div class="mb-1">
-              <p
-                class="text-l 2xl:text-2xl font-medium text-gray-600 font-semibold"
-              >
-                • Journal Reviewer
-              </p>
-              <p class="text-l 2xl:text-2xl text-gray-600 hover:text-blue-500">
-                &nbsp; &nbsp; TPAMI, TIP, TCSVT, TMLR
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-between flex-wrap"
-            :style="`font-size:` + this.smallFont"
-          >
-            <div>
-              <p
-                class="text-l 2xl:text-2xl font-medium text-gray-600 font-semibold"
-              >
-                • Conference Reviewer
-              </p>
-              <p class="text-l 2xl:text-2xl text-gray-600 hover:text-blue-500">
-                &nbsp; &nbsp; ICML, ICLR, NeurIPS, ACM MM, CVPR, AAAI, ECCV,
-                etc.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
